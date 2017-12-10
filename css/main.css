@@ -348,7 +348,7 @@ textarea {
     z-index: -1;
     height: 100%;
 
-    background-image: url("/img/back.jpg");
+    background-image: url("../img/back.jpg");
 
     background-repeat: no-repeat;
     background-position: left 200px top 0px;
