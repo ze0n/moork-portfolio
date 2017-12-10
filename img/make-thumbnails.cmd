@@ -1,0 +1,1 @@
+mogrify -path tbn/ -resize 400 *.webp
