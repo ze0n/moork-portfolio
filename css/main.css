@@ -389,6 +389,7 @@ h1.site-title {
 .social {
     position: fixed;
     bottom: 0px;
+	z-index: 100;
 }
 
 .social > ul{
