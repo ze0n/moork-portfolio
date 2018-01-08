@@ -11,20 +11,20 @@ class Portfolio {
     extractAllTags(structure) {
         var ret = {};
         structure.Images.forEach(function (d) {
-            d.tags.forEach(function(a){
-                if(ret[a] == undefined)
+            d.tags.forEach(function (a) {
+                if (ret[a] == undefined)
                     ret[a] = 0;
-                ret[a] ++;
+                ret[a]++;
             });
         });
         return ret;
     }
 
-    makeTagHash(structure){
+    makeTagHash(structure) {
         var ret = {};
         structure.Images.forEach(function (image) {
-            image.tags.forEach(function(a){
-                if(ret[a] == undefined)
+            image.tags.forEach(function (a) {
+                if (ret[a] == undefined)
                     ret[a] = [];
                 ret[a].push(image);
             });
@@ -47,17 +47,17 @@ class Portfolio {
     }
 
     selectImagesByTags(tags) {
-        if(this.cachedSelects[tags] != undefined)
+        if (this.cachedSelects[tags] != undefined)
             return this.cachedSelects[tags];
 
         var ret = [];
         this.structure.Images.forEach(function (image) {
             var condition = true;
-            tags.forEach(function(tag){
+            tags.forEach(function (tag) {
                 condition = condition && (image.tags.indexOf(tag) > -1);
             });
 
-            if(condition)
+            if (condition)
                 ret.push(image);
         });
 
@@ -67,21 +67,21 @@ class Portfolio {
 }
 
 
-class PortfolioRenderer{
-    constructor(portfolio){
+class PortfolioRenderer {
+    constructor(portfolio) {
         this.portfolio = portfolio;
 
         this.blockTemplate = $('#block-template-1').html();
         Mustache.parse(this.blockTemplate);
     }
 
-    renderPageByTag(tag){
+    renderPageByTag(tag) {
         return this.renderPageByTags([tag]);
     }
 
-    renderPageByTags(tags){
+    renderPageByTags(tags) {
         var images;
-        if(tags[0] == "all")
+        if (tags[0] == "all")
             images = this.portfolio.structure.Images;
         else
             images = this.portfolio.selectImagesByTags(tags);
@@ -93,15 +93,19 @@ class PortfolioRenderer{
         // clean old results
         dock.empty();
 
-        images.forEach(function(image){
+        var index = 0;
+
+        images.forEach(function (image) {
             var rendered = Mustache.render(pr.blockTemplate,
-            {
-                url: Settings.imagePath + image.file,
-                tmbUrl: Settings.imagePath + "tbn/" + image.file,
-                description: image.description,
-                tags: image.tags,
-                col: image.col
-            });
+                {
+                    url: Settings.imagePath + image.file,
+                    tmbUrl: Settings.imagePath + "tbn/" + image.file,
+                    description: image.description,
+                    tags: image.tags,
+                    col: image.col,
+                    ind: index
+                });
+            index += 1;
             dock.append(rendered);
         });
 
@@ -112,6 +116,33 @@ class PortfolioRenderer{
         };
 
         dock.justifiedGallery(justifiedGaleryOptions);
+
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+
+// build items array
+
+        var items = images.map(function (image) {
+            return {
+                src: Settings.imagePath + image.file,
+                w: image.w !== undefined ? image.w : 500,
+                h: image.h !== undefined ? image.h : 500
+            }
+        });
+
+
+        $(".zoomable-image").click(function(a) {
+            // define options (if needed)
+            var options = {
+                // optionName: 'option value'
+                // for example:
+                index: a.target.dataset.index // start at first slide
+            };
+
+// Initializes and opens PhotoSwipe
+            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+        });
 
         // $('.grid').masonry({
         //   // options
@@ -124,6 +155,12 @@ class PortfolioRenderer{
         //     queue: true
         //   }
         // });
+
+
+
+
+
+
     }
 }
 
@@ -133,29 +170,8 @@ PR.renderPageByTag("someTag");
 
 window.PR = PR;
 
-var SelectTag = function(tag){
+var SelectTag = function (tag) {
     PR.renderPageByTag(tag);
 };
 
 
-// var pswpElement = document.querySelectorAll('.pswp')[0];
-//
-// // build items array
-// var items = [
-//     {
-//         src: 'https://placekitten.com/1200/900',
-//         w: 1200,
-//         h: 900
-//     }
-// ];
-//
-// // define options (if needed)
-// var options = {
-//     // optionName: 'option value'
-//     // for example:
-//     index: 0 // start at first slide
-// };
-//
-// // Initializes and opens PhotoSwipe
-// var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-// gallery.init();

@@ -1,5 +1,5 @@
 var Structure = {
-	"tags": ["illustration", "maket", "polygraphy", 
+	"tags": ["illustration", "maket", "polygraphy",
 	         "sketch", "stage", "fineart", "drawing",
 			 "afisha", "best", "photo"],
 
@@ -23,7 +23,7 @@ var Structure = {
 			"description": ""
 		},
 	],
-	
+
 	"Images": [
 		{
 			"file": "NYcard1.webp",
@@ -35,7 +35,9 @@ var Structure = {
 			"file": "calendar.webp",
 			"description": "Календарь",
 			"tags": ["polygraphy", "corel", "best"],
-			"col": "col2"
+			"col": "col2",
+            "w": 416,
+            "h": 588
 		},
 		{
 			"file": "card2.webp",

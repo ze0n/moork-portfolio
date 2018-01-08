@@ -41,7 +41,7 @@
 
     <script id="block-template" type="x-tmpl-mustache">
         <div class="grid-item {{col}} {{#tags}}{{.}} {{/tags}}">
-        <img src="{{url}}"></img>
+        <img src="{{url}}" class="zoomable-image" data-index="{{ind}}"></img>
         <!--
         <div>
             {{description}}
@@ -55,11 +55,18 @@
         </div>
     </script>
 
+    <!--<script id="block-template-1" type="x-tmpl-mustache">-->
+        <!--<a href="{{url}}">-->
+            <!--<img alt="{{description}}" src="{{tmbUrl}}" class="zoomable-image" data-index="{{ind}}"/>-->
+        <!--</a>-->
+    <!--</script>-->
+
     <script id="block-template-1" type="x-tmpl-mustache">
-        <a href="{{url}}">
-            <img alt="{{description}}" src="{{tmbUrl}}"/>
+        <a href="{{url}}" rel="#">
+            <img alt="{{description}}" src="{{tmbUrl}}" class="zoomable-image" data-index="{{ind}}"/>
         </a>
     </script>
+
 
     <script id="author-template" type="x-tmpl-mustache">
         <div class="author">
@@ -81,7 +88,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="navigation-bar">
-                    <h1 class="site-title"><a class="logo-link" href="index.html">ANNA<br/>MAKSHAKOVA</a></h1>
+                    <h1 class="site-title"><a class="logo-link" href="index.html" rel="">ANNA<br/>MAKSHAKOVA</a></h1>
 
                     <div class="column">
                         <ul>
@@ -115,8 +122,11 @@
     <ul style="padding: 30px;">
         <li>
 			<a href="https://www.instagram.com/anna_moork">
-				<img src="img/instagram.svg" width="32px" title="Instagram"/> 
+				<img src="img/instagram.svg" width="32px" title="Instagram"/>
 			</a>
+            <a href="https://www.facebook.com/anna.makshakova">
+                <img src="img/facebook.svg" width="32px" title="Facebook"/>
+            </a>
 		</li>
     </ul>
 </div>
