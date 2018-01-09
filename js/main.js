@@ -130,7 +130,6 @@ class PortfolioRenderer {
             }
         });
 
-
         $(".zoomable-image").click(function(a) {
             // define options (if needed)
             var options = {
@@ -155,11 +154,6 @@ class PortfolioRenderer {
         //     queue: true
         //   }
         // });
-
-
-
-
-
 
     }
 }
