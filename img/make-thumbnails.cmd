@@ -1,1 +1,1 @@
-mogrify -path tbn/ -resize 400 *.webp
+mogrify -path tbn/ -resize x300 *.jpg

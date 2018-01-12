@@ -80,18 +80,60 @@ class PortfolioRenderer {
     }
 
     renderPageByTags(tags) {
+        var dock = $("#mygallery");
+
+        // clean old results
+        dock.empty();
+        dock.removeClass("justified-gallery");
+        dock.css({"height": "auto"});
+
+        if(tags[0] == "stage"){
+
+            var subgaleryTemplate = $('#subgalery-template-1').html();
+            Mustache.parse(subgaleryTemplate);
+
+            var rendered;
+
+            rendered = Mustache.render(subgaleryTemplate,
+                {
+                    id: "subgalery-afisha",
+                    title: "Afishes"
+                }
+            );
+            dock.append(rendered);
+            this.renderGalery($("#subgalery-afisha"), ["afisha"], 300);
+
+            rendered = Mustache.render(subgaleryTemplate,
+                {
+                    id: "subgalery-scenography",
+                    title: "Scenography"
+                }
+            );
+            dock.append(rendered);
+            this.renderGalery($("#subgalery-scenography"), ["scenography"], 200);
+
+            rendered = Mustache.render(subgaleryTemplate,
+                {
+                    id: "subgalery-costumes",
+                    title: "Costumes"
+                }
+            );
+            dock.append(rendered);
+            this.renderGalery($("#subgalery-costumes"), ["costumes"], 200);
+
+        } else {
+            this.renderGalery(dock, tags, 300);
+        }
+    }
+
+    renderGalery(dock, tags, chosenHeight) {
         var images;
         if (tags[0] == "all")
             images = this.portfolio.structure.Images;
         else
             images = this.portfolio.selectImagesByTags(tags);
 
-        var dock = $("#mygallery");
-
         var pr = this;
-
-        // clean old results
-        dock.empty();
 
         var index = 0;
 
@@ -109,9 +151,15 @@ class PortfolioRenderer {
             dock.append(rendered);
         });
 
+        // var chosenHeight = 300;
+        // if (tags[0] == "stage" || tags[0] == "costumes" || tags[0] == "afisha" || tags[0] == "scenography" ){
+        //     chosenHeight = 200;
+        // }
+
         var justifiedGaleryOptions = {
-            rowHeight: 300,
+            rowHeight: chosenHeight,
             lastRow: 'nojustify',
+            maxRowHeight: 350,
             margins: 10
         };
 
@@ -130,7 +178,6 @@ class PortfolioRenderer {
             }
         });
 
-
         $(".zoomable-image").click(function(a) {
             // define options (if needed)
             var options = {
@@ -144,24 +191,8 @@ class PortfolioRenderer {
             gallery.init();
         });
 
-        // $('.grid').masonry({
-        //   // options
-        //   itemSelector: '.grid-item',
-        //   columnWidth: 200,
-        //   gutter: 10,
-        //   animate: true,
-        //   animationOptions: {
-        //     duration: 700,
-        //     queue: true
-        //   }
-        // });
-
-
-
-
-
-
     }
+
 }
 
 var P = new Portfolio(Structure);

@@ -438,3 +438,7 @@ a.logo-link:hover{
     text-decoration: none;
     color:black;
 }
+
+.block-image {
+    cursor: pointer;
+}
