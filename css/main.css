@@ -355,6 +355,15 @@ textarea {
     background-size: auto 100%;
 }
 
+@media (max-width: 767px) {
+    .welcome {
+        background-image: url("../img/back.jpg");
+        background-repeat: no-repeat;
+        background-position: left 40px top 0px;
+        background-size: auto 100%;
+    }
+}
+
 .page-content-wrapper {
 }
 
@@ -368,6 +377,7 @@ textarea {
     z-index:1;
     
     display: block;
+    min-height: 320px;
 }
 
 @media (max-width: 767px) {
