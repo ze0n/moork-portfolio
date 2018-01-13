@@ -1,1 +1,1 @@
-mogrify -path tbn/ -resize x400 *.jpg
+mogrify -path tbn/ -resize x300 *.jpg
