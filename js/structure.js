@@ -170,6 +170,14 @@ var Structure = {
             "w": 1255,
             "h": 900
 		},
+	    {
+			"file": "illustration-otkr-2416-900.jpg",
+			"description": "",
+			"tags": ["illustration"],
+			"col": "col2",
+            "w": 2416,
+            "h": 900
+		},
 
 
 
