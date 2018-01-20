@@ -186,9 +186,12 @@ class PortfolioRenderer {
                 index: a.target.dataset.index // start at first slide
             };
 
+            options = {};
+
 // Initializes and opens PhotoSwipe
             var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-            gallery.init();
+            gallery.init(); 
+            gallery.goTo(parseInt(a.target.dataset.index,10));
         });
 
     }
