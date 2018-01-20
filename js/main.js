@@ -165,8 +165,8 @@ class PortfolioRenderer {
 
         dock.justifiedGallery(justifiedGaleryOptions);
 
-
         var pswpElement = document.querySelectorAll('.pswp')[0];
+
 
 // build items array
 
@@ -178,20 +178,18 @@ class PortfolioRenderer {
             }
         });
 
-        $(".zoomable-image").click(function(a) {
+        $(dock).find(".zoomable-image").click(function(a) {
             // define options (if needed)
             var options = {
                 // optionName: 'option value'
                 // for example:
-                index: a.target.dataset.index // start at first slide
+                index: parseInt(a.target.dataset.index) // start at first slide
             };
 
-            options = {};
-
-// Initializes and opens PhotoSwipe
             var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-            gallery.init(); 
-            gallery.goTo(parseInt(a.target.dataset.index,10));
+            gallery.init();
+            var pind = parseInt(a.target.dataset.index,10); 
+            gallery.goTo(pind);
         });
 
     }
