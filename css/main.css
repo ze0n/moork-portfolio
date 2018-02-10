@@ -490,3 +490,12 @@ a.logo-link:hover{
 .block-image {
     cursor: pointer;
 }
+
+.copyright{
+    text-align: center;
+    color: #888;
+    padding: 0px;
+    padding-top: 10px;
+    margin: 0px;
+    font-size: 14px;
+}
