@@ -488,8 +488,6 @@ var Structure = {
             "h": 900
         },
 
-
-
         {
             "file": "sketch-scen-1237-900.jpg",
             "description": "",
