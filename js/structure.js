@@ -453,24 +453,24 @@ var Structure = {
             "w": 636,
             "h": 900
         },
-        {
-            "file": "afisha-zoly-636-900.jpg",
-            "description": "",
-            "tags": ["stage", "afisha"],
-            "col": "col2",
-            "w": 636,
-            "h": 900
-        },
-
+        
+     
 
         {
-            "file": "toonz-alesha-1503-900.jpg",
+            "file": "2d_viviska_1800-2768 ",
             "description": "",
             "tags": ["animation"],
             "col": "col2",
-            "w": 1503,
-            "h": 900
+            "w": 2768,
+            "h": 1800
         },
+		{
+            "file": "2d_klown_1800-2768 ",
+            "description": "",
+            "tags": ["animation"],
+            "col": "col2",
+            "w": 2768,
+            "h": 1800
         {
             "file": "toonz-ylii2-1772-900.jpg",
             "description": "",
@@ -586,8 +586,6 @@ var Structure = {
             "w": 1301,
             "h": 900
         },
-
-
     ]
 };
 
