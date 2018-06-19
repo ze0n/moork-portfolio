@@ -427,8 +427,6 @@ var Structure = {
             "w": 1287,
             "h": 900
 		},
-
-
 		{
 			"file": "stage_plakat_698_900.jpg",
 			"description": "",
@@ -453,11 +451,8 @@ var Structure = {
             "w": 636,
             "h": 900
         },
-        
-     
-
         {
-            "file": "2d_viviska_1800-2768 ",
+            "file": "2d_viviska_2768-1800.jpg",
             "description": "",
             "tags": ["animation"],
             "col": "col2",
@@ -465,12 +460,13 @@ var Structure = {
             "h": 1800
         },
 		{
-            "file": "2d_klown_1800-2768 ",
+            "file": "2d_klown_2768-1800.jpg",
             "description": "",
             "tags": ["animation"],
             "col": "col2",
             "w": 2768,
             "h": 1800
+        },
         {
             "file": "toonz-ylii2-1772-900.jpg",
             "description": "",
