@@ -1,30 +1,92 @@
 var Structure = {
 	"tags": ["illustration", "maket", "polygraphy",
 	         "sketch", "stage", "fineart", "drawing",
-			 "afisha", "best", "photo"],
+			 "afisha", "best", "photo", "cg", "speedPaint"],
 
-	"Projects": [
-		{
-			"id": "project-elza",
-			"fullname": "Земля Эльзы",
-			"date": "24.11.2016",
-			"theatre": "СДТ",
-			"role": "художник-постановщик",
-			"director": "Олег Степанов",
-			"description": ""
-		},
-		{
-			"id": "project-zolyshka",
-			"fullname": "Zolyшка",
-			"date": "04.06.2016",
-			"theatre": "КДТ",
-			"role": "художник-постановщик",
-			"director": "Олег Степанов",
-			"description": ""
-		},
-	],
+	"Projects": {
+		// {
+		// 	"id": "project-elza",
+		// 	"fullname": "Земля Эльзы",
+		// 	"date": "24.11.2016",
+		// 	"theatre": "СДТ",
+		// 	"role": "художник-постановщик",
+		// 	"director": "Олег Степанов",
+		// 	"description": ""
+		// },
+		// {
+		// 	"id": "project-zolyshka",
+		// 	"fullname": "Zolyшка",
+		// 	"date": "04.06.2016",
+		// 	"theatre": "КДТ",
+		// 	"role": "художник-постановщик",
+		// 	"director": "Олег Степанов",
+		// 	"description": ""
+		// },
+
+         "speedPaint": {
+            "id": "speedPaint",
+            "fullname": "Speed Paint",
+            "date": "04.06.2016",
+            "theatre": "КДТ",
+            "role": "художник-постановщик",
+            "director": "Олег Степанов",
+            "description": ""
+        },
+	},
 
 	"Images": [
+
+        {
+            "file": "cg_ptichka_928_900.jpg",
+            "description": "",
+            "tags": ["speedPaint"],
+            "col": "col2",
+            "w": 928,
+            "h": 900
+        },
+
+        {
+            "file": "cg_naturmort3_908_900.jpg",
+            "description": "",
+            "tags": ["speedPaint"],
+            "col": "col2",
+            "w": 908,
+            "h": 900
+        },
+        {
+            "file": "cg_naturmort2_883_900.jpg",
+            "description": "",
+            "tags": ["speedPaint"],
+            "col": "col2",
+            "w": 883,
+            "h": 900
+        },
+        {
+            "file": "cg_naturmort_tcvet2_636_900.jpg",
+            "description": "",
+            "tags": ["speedPaint"],
+            "col": "col2",
+            "w": 636,
+            "h": 900
+        },
+        {
+            "file": "cg_naturmort_tcvet_687_900.jpg",
+            "description": "",
+            "tags": ["speedPaint"],
+            "col": "col2",
+            "w": 687,
+            "h": 900
+        },
+        {
+            "file": "cg_naturmort_622_900.jpg",
+            "description": "",
+            "tags": ["speedPaint"],
+            "col": "col2",
+            "w": 622,
+            "h": 900
+        },
+
+
 		{
 			"file": "drawing_men_691_900.jpg",
 			"description": "",
@@ -454,23 +516,23 @@ var Structure = {
         {
             "file": "2d_viviska_2768-1800.jpg",
             "description": "",
-            "tags": ["animation"],
-            "col": "col2",
+            "tags": ["cgLarge"],
+            "col": "col4",
             "w": 2768,
             "h": 1800
         },
 		{
             "file": "2d_klown_2768-1800.jpg",
             "description": "",
-            "tags": ["animation"],
-            "col": "col2",
+            "tags": ["cgLarge"],
+            "col": "col4",
             "w": 2768,
             "h": 1800
         },
         {
             "file": "toonz-ylii2-1772-900.jpg",
             "description": "",
-            "tags": ["animation"],
+            "tags": ["melnitsa"],
             "col": "col2",
             "w": 1772,
             "h": 900
@@ -478,7 +540,7 @@ var Structure = {
         {
             "file": "toonz-ylii-2566-900.jpg",
             "description": "",
-            "tags": ["animation"],
+            "tags": ["melnitsa"],
             "col": "col2",
             "w": 2566,
             "h": 900

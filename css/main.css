@@ -499,3 +499,12 @@ a.logo-link:hover{
     margin: 0px;
     font-size: 14px;
 }
+
+
+.subgalery h1{
+    margin-bottom: 5px;
+}
+
+.subgalery p{
+    margin: 5px;
+}
