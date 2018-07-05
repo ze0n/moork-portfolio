@@ -135,13 +135,13 @@ var Structure = {
 
                     "personnage": {
                         "height": 500,
-                        "title": "Personage Design",
+                        "title": "Character design",
                         "id": "subgalery-personnage"
                     },
 
 					"cgLarge": {
                         "height": 500,
-                        "title": "2D Designer",
+                        "title": "2D Graphics",
                         "id": "subgalery-cgLarge"
                     },
                     
