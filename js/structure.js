@@ -679,6 +679,14 @@ var Structure = {
             "w": 1931,
             "h": 900
         },
+		{
+            "file": "2d-Dame3-1809-900.jpg",
+            "description": "",
+            "tags": ["personnage"],
+            "col": "col4",
+            "w": 1809,
+            "h": 900
+        },
         {
             "file": "toonz-ylii2-1772-900.jpg",
             "description": "",
