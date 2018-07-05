@@ -672,6 +672,14 @@ var Structure = {
             "h": 1800
         },
 		{
+            "file": "2d-Dame-1204-900.jpg",
+            "description": "",
+            "tags": ["personnage"],
+            "col": "col4",
+            "w": 1204,
+            "h": 900
+        },
+		{
             "file": "2d-Dame2-1931-900.jpg",
             "description": "",
             "tags": ["personnage"],
