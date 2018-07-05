@@ -10,6 +10,12 @@ var Structure = {
         "stage": {
             "title": "Projects in Theater",
             "projects": {
+				 "afisha": {
+                    "height": 300,
+                    "title": "Theater posters",
+                    "id": "subgalery-afisha"
+                },
+				
                 "naturemort": {
                     "height": 300,
                     "title": '“Nature Mort” — independent project, 2018',
@@ -109,11 +115,6 @@ var Structure = {
                         "</p>"
                 },
 
-                "afisha": {
-                    "height": 300,
-                    "title": "Selected Afishes",
-                    "id": "subgalery-afisha"
-                },
                 "scenography": {
                     "height": 200,
                     "title": "Scenography",
