@@ -18,7 +18,7 @@ var Structure = {
 				
                 "naturemort": {
                     "height": 300,
-                    "title": '“Nature Mort” — independent project, 2018',
+                    "title": '“Nature Mort”',
                     "id": "subgalery-naturemort",
                     "description":
                         "<p>"+
@@ -28,10 +28,23 @@ var Structure = {
                         "<b>Role:</b> Stage designer and video designer"+
                         "</p>"
                 },
+				
+				 "elsa": {
+                    "height": 300,
+                    "title": "“The land of Elsa”",
+                    "id": "subgalery-elsa",
+                    "description": 
+                        "<p>"+
+                        "<b>Author:</b> The land of Elsa by Jaroslava Pulinovich<br/>"+
+                        "<b>Venue:</b> Sarapul Drama Theater, premiere 2016<br/>"+
+                        "<b>Stage director:</b> Oleg Stepanov<br/>"+
+                        "<b>Role:</b> stage designer"+
+                        "</p>"
+                },
 
                 "cinderella": {
                     "height": 200,
-                    "title": "“Cinderella” — Kirov Drama Theater, 2016",
+                    "title": "“Cinderella”",
                     "id": "subgalery-cinderella",
                     "description": 
                         "<p>"+
@@ -44,7 +57,7 @@ var Structure = {
 
                 "diary": {
                     "height": 300,
-                    "title": "“Diary of a Madman” by Nikolay Gogol — 2013",
+                    "title": "“Diary of a Madman”",
                     "id": "subgalery-diary",
                     "description": 
                         "<p>"+
@@ -57,7 +70,7 @@ var Structure = {
 
                 "emigrants": {
                     "height": 300,
-                    "title": "“Emigrants” by Slavomir Mrozek",
+                    "title": "“Emigrants”",
                     "id": "subgalery-emigrants",
                     "description":
                         "<p>"+
@@ -81,7 +94,7 @@ var Structure = {
                 },
                 "swift": {
                     "height": 200,
-                    "title": "“The house that Swift built” — graduation project, 2016",
+                    "title": "“The house that Swift built”",
                     "id": "subgalery-swift",
                     "description": 
                         "<p>"+
@@ -90,18 +103,7 @@ var Structure = {
                         "<b>Role:</b> stage designer and costume designer"+
                         "</p>"
                 },
-                "elsa": {
-                    "height": 300,
-                    "title": "“The land of Elsa”",
-                    "id": "subgalery-elsa",
-                    "description": 
-                        "<p>"+
-                        "<b>Author:</b> The land of Elsa by Jaroslava Pulinovich<br/>"+
-                        "<b>Venue:</b> Sarapul Drama Theater, premiere 2016<br/>"+
-                        "<b>Stage director:</b> Oleg Stepanov<br/>"+
-                        "<b>Role:</b> stage designer"+
-                        "</p>"
-                },
+               
                 "pinocchio": {
                     "height": 200,
                     "title": "“The Adventures of Pinocchio”",
