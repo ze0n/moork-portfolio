@@ -1,49 +1,186 @@
 var Structure = {
 	"tags": ["illustration", "maket", "polygraphy",
 	         "sketch", "stage", "fineart", "drawing",
-			 "afisha", "best", "photo", "cg", "speedPaint"],
+			 "afisha", "best", "photo", "cg", "speedPaint",
+            "personnage"
+             ],
 
 	"Projects": {
-		// {
-		// 	"id": "project-elza",
-		// 	"fullname": "Земля Эльзы",
-		// 	"date": "24.11.2016",
-		// 	"theatre": "СДТ",
-		// 	"role": "художник-постановщик",
-		// 	"director": "Олег Степанов",
-		// 	"description": ""
-		// },
-		// {
-		// 	"id": "project-zolyshka",
-		// 	"fullname": "Zolyшка",
-		// 	"date": "04.06.2016",
-		// 	"theatre": "КДТ",
-		// 	"role": "художник-постановщик",
-		// 	"director": "Олег Степанов",
-		// 	"description": ""
-		// },
 
-         "speedPaint": {
-            "id": "speedPaint",
-            "fullname": "Speed Paint",
-            "date": "04.06.2016",
-            "theatre": "КДТ",
-            "role": "художник-постановщик",
-            "director": "Олег Степанов",
-            "description": ""
+        "stage": {
+            "title": "Projects in Theater",
+            "projects": {
+                "naturemort": {
+                    "height": 300,
+                    "title": '“Nature Mort” — independent project, 2018',
+                    "id": "subgalery-naturemort",
+                    "description":
+                        "<p>"+
+                        "<b>Scenario:</b> The play is based on the texts of Fyodor Dostoevsky<br/>"+
+                        "<b>Venue:</b> St. Petersburg, independent project, 2018<br/>"+
+                        "<b>Stage director:</b> Sofia Sirakonyan<br/>"+
+                        "<b>Role:</b> Stage designer and video designer"+
+                        "</p>"
+                },
+
+                "cinderella": {
+                    "height": 200,
+                    "title": "“Cinderella” — Kirov Drama Theater, 2016",
+                    "id": "subgalery-cinderella",
+                    "description": 
+                        "<p>"+
+                        "<b>Scenario:</b> Cinderella by Joёl Pommerat<br/>"+
+                        "<b>Venue:</b> Kirov Drama Theater, 2016<br/>"+
+                        "<b>Stage director:</b> Oleg Stepanov<br/>"+
+                        "<b>Role:</b> stage designer and costume designer"+
+                        "</p>"
+                },
+
+                "diary": {
+                    "height": 300,
+                    "title": "“Diary of a Madman” by Nikolay Gogol — 2013",
+                    "id": "subgalery-diary",
+                    "description": 
+                        "<p>"+
+                        "<b>Scenario:</b> Diary of a Madman by Nikolay Gogol<br/>"+
+                        "<b>Venue:</b> St. Petersburg Drama Theater named by Countess S.V. Panina, 2013<br/>"+
+                        "<b>Stage director:</b> Alexandra Shagoyko<br/>"+
+                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
+                        "</p>"
+                },
+
+                "emigrants": {
+                    "height": 300,
+                    "title": "“Emigrants” by Slavomir Mrozek",
+                    "id": "subgalery-emigrants",
+                    "description":
+                        "<p>"+
+                        "<b>Scenario:</b> Emigrants by Slavomir Mrozek<br/>"+
+                        "<b>Venue:</b> Anna Akhmatova Museum in the Fountain House, 2015<br/>"+
+                        "<b>Stage director:</b> Elena Troyan<br/>"+
+                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
+                        "</p>"
+                },
+                "gazzetta": {
+                    "height": 300,
+                    "title": "“La Gazzetta”",
+                    "id": "subgalery-gazzetta",
+                    "description": 
+                        "<p>"+
+                        "<b>Scenario:</b> La Gazzetta opera buff by Gioacchino Rossini<br/>"+
+                        "<b>Venue:</b> St. Petersburg State Children's Musical Theater, 2015<br/>"+
+                        "<b>Stage director:</b> Sofia Sirakonyan<br/>"+
+                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
+                        "</p>"
+                },
+                "swift": {
+                    "height": 200,
+                    "title": "“The house that Swift built” — graduation project, 2016",
+                    "id": "subgalery-swift",
+                    "description": 
+                        "<p>"+
+                        "<b>Scenario:</b> The house that Swift built by Grigory Gorin<br/>"+
+                        "<b>Venue:</b> St. Petersburg graduation project 2016<br/>"+
+                        "<b>Role:</b> stage designer and costume designer"+
+                        "</p>"
+                },
+                "elsa": {
+                    "height": 300,
+                    "title": "“The land of Elsa”",
+                    "id": "subgalery-elsa",
+                    "description": 
+                        "<p>"+
+                        "<b>Scenario:</b> The land of Elsa by Jaroslava Pulinovich<br/>"+
+                        "<b>Venue:</b> Sarapul Drama Theater, premiere 2016<br/>"+
+                        "<b>Stage director:</b> Oleg Stepanov<br/>"+
+                        "<b>Role:</b> stage designer"+
+                        "</p>"
+                },
+                "pinocchio": {
+                    "height": 200,
+                    "title": "“The Adventures of Pinocchio”",
+                    "id": "subgalery-pinocchio",
+                    "description": 
+                        "<p>"+
+                        "<b>Scenario:</b> The Adventures of Pinocchio by Carlo Collodi<br/>"+
+                        "<b>Venue:</b> Sarapul Drama Theater, 2016<br/>"+
+                        "<b>Stage director:</b> Vladimir Zavarzin<br/>"+
+                        "<b>Role:</b> artist director and costume design"+
+                        "</p>"
+                },
+
+                "afisha": {
+                    "height": 300,
+                    "title": "Selected Afishes",
+                    "id": "subgalery-afisha"
+                },
+                "scenography": {
+                    "height": 200,
+                    "title": "Scenography",
+                    "id": "subgalery-scenography"
+                },
+
+                "costumes": {
+                    "height": 200,
+                    "title": "Costumes",
+                    "id": "subgalery-costumes"
+                }
+            }
         },
+
+        "cg": {
+                "title": "Computer Graphics Projects",
+
+                "projects": {
+
+                    "personnage": {
+                        "height": 500,
+                        "title": "Personage Design",
+                        "id": "subgalery-personnage"
+                    },
+
+                    "speedPaint": {
+                        "height": 300,
+                        "title": "Speed Paint",
+                        "id": "subgalery-speedPaint"
+                    },
+                    
+                    "cgLarge": {
+                        "height": 500,
+                        "title": "2D Designer",
+                        "id": "subgalery-cgLarge"
+                    }
+                }
+            },
+
+
+        "animation": {
+            "title": "Projects in Animation",
+
+                        "projects": {
+
+                "melnitsa": {
+                    "height": 300,
+                    "title": "Three bogatyrs and the princess of Egypt",
+                    "id": "subgalery-melnitsa",
+                    "description": "<p>Work as a layout painter in the large project in Melnitsa studio.</p> <p>Links: <ul> <li><a href='http://melnitsa.com/project/try_bogatyrya_i_princessa_egypta/'>Project site (Ru)</a></li> <li><a href='https://www.imdb.com/title/tt7548114/'>IMDB</></li> <li><a href='http://melnitsa.com/en/'>Melnitsa studio site</a></li></p>"
+                }       
+            }
+        }
+
 	},
 
 	"Images": [
 
-        {
-            "file": "cg_ptichka_928_900.jpg",
-            "description": "",
-            "tags": ["speedPaint"],
-            "col": "col2",
-            "w": 928,
-            "h": 900
-        },
+        { "file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["speedPaint"], "col": "col2", "w": 928, "h": 900 },
+
+        {"file": "cg_ptichka_928_900.jpg", "description": "asd", "tags": ["naturemort"], "col": "col2", "w": 928, "h": 900 },
+        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 928, "h": 900 },
+        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 928, "h": 900 },
+        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 928, "h": 900 },
+        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 928, "h": 900 },
+
+
 
         {
             "file": "cg_naturmort3_908_900.jpg",
@@ -320,16 +457,16 @@ var Structure = {
 
         {
             "file": "kostum-zoly2-2545-900.jpg",
-            "description": "",
-            "tags": ["stage", "costumes"],
+            "description": "Costumes #1, aquarelle",
+            "tags": ["stage", "cinderella"],
             "col": "col2",
             "w": 2545,
             "h": 900
         },
         {
             "file": "kostum-zoly-2545-900.jpg",
-            "description": "",
-            "tags": ["stage", "costumes"],
+            "description": "Costumes #2, aquarelle",
+            "tags": ["stage", "cinderella"],
             "col": "col2",
             "w": 2545,
             "h": 900
@@ -337,7 +474,7 @@ var Structure = {
         {
             "file": "kostum-diplom-2545-900.jpg",
             "description": "",
-            "tags": ["stage", "costumes"],
+            "tags": ["stage", "swift"],
             "col": "col2",
             "w": 2545,
             "h": 900
@@ -345,7 +482,7 @@ var Structure = {
         {
             "file": "kostum-diplom2-2545-900.jpg",
             "description": "",
-            "tags": ["stage", "costumes"],
+            "tags": ["stage", "swift"],
             "col": "col2",
             "w": 2545,
             "h": 900
@@ -353,7 +490,7 @@ var Structure = {
         {
             "file": "kostum-pinokkio-2545-900.jpg",
             "description": "",
-            "tags": ["stage", "costumes"],
+            "tags": ["stage", "pinocchio"],
             "col": "col2",
             "w": 2545,
             "h": 900
@@ -361,7 +498,7 @@ var Structure = {
         {
             "file": "kostum-pinokkio2-2545-900.jpg",
             "description": "",
-            "tags": ["stage", "costumes"],
+            "tags": ["stage", "pinocchio"],
             "col": "col2",
             "w": 2545,
             "h": 900
@@ -372,7 +509,7 @@ var Structure = {
 		{
 			"file": "stage_diplom4_1211_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "swift"],
 			"col": "col2",
             "w": 1211,
             "h": 900
@@ -380,7 +517,7 @@ var Structure = {
 		{
 			"file": "stage_diplom1_1199_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "swift"],
 			"col": "col2",
             "w": 1199,
             "h": 900
@@ -388,7 +525,7 @@ var Structure = {
 		{
 			"file": "stage_diplom2_1189_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "swift"],
 			"col": "col2",
             "w": 1189,
             "h": 900
@@ -396,7 +533,7 @@ var Structure = {
 		{
 			"file": "stage_diplom3_1196_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "swift"],
 			"col": "col2",
             "w": 1196,
             "h": 900
@@ -524,7 +661,7 @@ var Structure = {
 		{
             "file": "2d_klown_2768-1800.jpg",
             "description": "",
-            "tags": ["cgLarge"],
+            "tags": ["personnage"],
             "col": "col4",
             "w": 2768,
             "h": 1800

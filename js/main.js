@@ -87,81 +87,45 @@ class PortfolioRenderer {
         dock.removeClass("justified-gallery");
         dock.css({"height": "auto"});
 
-        if(tags[0] == "stage"){
+
+        if(tags[0]=="about"){
+            var aboutTemplate = $('#about-template-1').html();
+            Mustache.parse(aboutTemplate);
+            var rendered = Mustache.render(aboutTemplate, {});
+            dock.append(rendered);
+            return;
+        }
+
+        var categories = this.portfolio.structure.Projects;
+
+        if(tags[0] in categories){
+            var projects = categories[tags[0]].projects;
+
             var subgaleryTemplate = $('#subgalery-template-1').html();
             Mustache.parse(subgaleryTemplate);
 
-            var rendered;
 
-            rendered = Mustache.render(subgaleryTemplate,
-                {
-                    id: "subgalery-afisha",
-                    title: "Afishes"
-                }
-            );
-            dock.append(rendered);
-            this.renderGalery($("#subgalery-afisha"), ["afisha"], 300);
+            var ul = document.createElement("ul");
+            var h = document.createElement("h1");
+            $(h).text(categories[tags[0]].title);
+            for(var projectKey in projects) {
+                var li = document.createElement("li");
+                var a = document.createElement("a");
+                a.href="#anchor-subgalery-"+projectKey
+                $(a).html(projects[projectKey].title);
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+            dock.append(h);
+            dock.append(ul);
 
-            rendered = Mustache.render(subgaleryTemplate,
-                {
-                    id: "subgalery-scenography",
-                    title: "Scenography"
-                }
-            );
-            dock.append(rendered);
-            this.renderGalery($("#subgalery-scenography"), ["scenography"], 200);
+            for(var projectKey in projects) {
 
-            rendered = Mustache.render(subgaleryTemplate,
-                {
-                    id: "subgalery-costumes",
-                    title: "Costumes"
-                }
-            );
-            dock.append(rendered);
-            this.renderGalery($("#subgalery-costumes"), ["costumes"], 200);
-        } 
-        else if(tags[0] == "cg")
-        {
-            var subgaleryTemplate = $('#subgalery-template-1').html();
-            Mustache.parse(subgaleryTemplate);
-
-            var rendered;
-
-            rendered = Mustache.render(subgaleryTemplate,
-                {
-                    id: "subgalery-speed",
-                    title: "Speed Paint"
-                }
-            );
-            dock.append(rendered);
-            this.renderGalery($("#subgalery-speed"), ["speedPaint"], 300);
-
-            rendered = Mustache.render(subgaleryTemplate,
-                {
-                    id: "subgalery-cgNormal",
-                    title: "Computer Graphics"
-                }
-            );
-            dock.append(rendered);
-            this.renderGalery($("#subgalery-cgNormal"), ["cgLarge"], 500);
-
-        } 
-        else if(tags[0] == "animation")
-        {
-            var subgaleryTemplate = $('#subgalery-template-1').html();
-            Mustache.parse(subgaleryTemplate);
-
-            var rendered;
-
-            rendered = Mustache.render(subgaleryTemplate,
-                {
-                    id: "subgalery-melnitsa",
-                    title: "Three bogatyrs and the princess of Egypt",
-                    description: "<p>Work as a layout painter in the large project in Melnitsa studio.</p> <p>Links: <ul> <li><a href='http://melnitsa.com/project/try_bogatyrya_i_princessa_egypta/'>Project site (Ru)</a></li> <li><a href='https://www.imdb.com/title/tt7548114/'>IMDB</></li> <li><a href='http://melnitsa.com/en/'>Melnitsa studio site</a></li></p>"
-                }
-            );
-            dock.append(rendered);
-            this.renderGalery($("#subgalery-melnitsa"), ["melnitsa"], 300);
+                var project = projects[projectKey];
+                var rendered = Mustache.render(subgaleryTemplate, project);
+                dock.append(rendered);
+                this.renderGalery($("#"+project.id), [projectKey], project.height);
+            };
         }
         else {
             this.renderGalery(dock, tags, 300);
@@ -216,7 +180,8 @@ class PortfolioRenderer {
             return {
                 src: Settings.imagePath + image.file,
                 w: image.w !== undefined ? image.w : 500,
-                h: image.h !== undefined ? image.h : 500
+                h: image.h !== undefined ? image.h : 500,
+                title: image.description
             }
         });
 

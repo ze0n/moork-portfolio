@@ -39,28 +39,6 @@
 <!-- Add your site or application content here -->
 <div id="wrapper">
 
-    <script id="block-template" type="x-tmpl-mustache">
-        <div class="grid-item {{col}} {{#tags}}{{.}} {{/tags}}">
-        <img src="{{url}}" class="zoomable-image" data-index="{{ind}}"></img>
-        <!--
-        <div>
-            {{description}}
-        </div>
-        <div>
-            {{#tags}}
-            {{.}}
-            {{/tags}}
-        </div>
-        -->
-        </div>
-    </script>
-
-    <!--<script id="block-template-1" type="x-tmpl-mustache">-->
-        <!--<a href="{{url}}">-->
-            <!--<img alt="{{description}}" src="{{tmbUrl}}" class="zoomable-image" data-index="{{ind}}"/>-->
-        <!--</a>-->
-    <!--</script>-->
-
     <script id="block-template-1" type="x-tmpl-mustache">
         <div class="block-image">
             <img alt="{{description}}" src="{{tmbUrl}}" class="zoomable-image" data-index="{{ind}}"/>
@@ -69,22 +47,47 @@
 
     <script id="subgalery-template-1" type="x-tmpl-mustache">
         <div class="subgalery">
-            <h1>{{title}}</h1>
+            <h3><a id="anchor-{{id}}"></a>{{title}}</h3>
             <div>{{{description}}}</div>
-            <div id={{id}}>
+            <div id="{{id}}">
             </div>
         </div>
     </script>
 
-    <script id="author-template" type="x-tmpl-mustache">
-        <div class="author">
-        Макшакова я
-        </div>
+    <script id="about-template-1" type="x-tmpl-mustache">
+                            
+                <div id="about">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4" style="min-width: 350px;">
+                                    <img width="300px" src="img/935453E3nYVQEr.jpg"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2>Summary</h2>
+                                    <p>Hello. My name is Anna. I am an artist, stage-designer and illustrator.
+                                    <br/>
+                                    You can contact me by e-mail: annamakshakova(at)gmail.com</p>
 
+                                    <h2>Work experience</h2>
+                                    <ul>
+                                        <li>2016, <b>Artist renderer, artist chaise</b> at <a href="http://melnitsa.com/en/">Melnitsa Animation Studio</a>, Saint-Petersburg, Russia</li>
+                                        <li>2015 — current, <b>Print Designer</b> at <a href="http://sarapultheatre.ru/">Sarapul Drama Theatre</a>, Sarapul, Russia</li>
+                                        <li>2015 — 2016, <b>Stage Designer</b> at <a href="http://sarapultheatre.ru/">Sarapul Drama Theatre</a>, Sarapul, Russia</li>
+                                    </ul>
 
-
-
-
+                                    <h2>Education</h2>
+                                    <ul>
+                                        <!-- <li>2017 — current, <b>English</b> at <a href="http://www.hopnscotch.com/">Hop and Scotch school</a>, Saint-Petersburg</li> -->
+                                        <li>2010 — 2016, <b>Stage Designer</b> at <a href="http://www.artsacademy.ru/">State
+                                            Academic University of painting, sculpture and architecture named after I.E.
+                                            Repin</a>, St. Petersburg
+                                        </li>
+                                        <li>2005 — 2009, <b>Painter, teacher</b> at College of Arts, Tchaikovsky</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     </script>
 
     <div class="welcome">
@@ -100,14 +103,14 @@
 
                     <div class="column">
                         <ul>
-                            <li style="padding-bottom: 5px"><a href="about.html" class="tag">About</a></li>
-                            
+                           
+                            <li style="padding-bottom: 5px"><a href="index.html#about" class="tag" rel="about">About</a></li>
                             <li><a href="index.html#cg" class="tag" rel="cg">Computer Graphics</a></li>
-                            <li><a href="index.html#animation" class="tag" rel="animation">Animation</a></li>
+                            <!-- <li><a href="index.html#animation" class="tag" rel="animation">Animation</a></li> -->
                             <li><a href="index.html#drawing" class="tag" rel="drawing">Drawing</a></li>
                             <li><a href="index.html#painting" class="tag" rel="painting">Painting</a></li>
-                            <li><a href="index.html#illustration" class="tag" rel="illustration">Illustration</a></li>
-                            <li><a href="index.html#sketch" class="tag" rel="sketch">Sketch</a></li>
+                            <!-- <li><a href="index.html#illustration" class="tag" rel="illustration">Illustration</a></li> -->
+                            <!-- <li><a href="index.html#sketch" class="tag" rel="sketch">Sketch</a></li> -->
                             <li><a href="index.html#stage" class="tag" rel="stage">Theater</a></li>
 
                             <!--<li><a href="" class="tag" rel="scenography">Scenography</a></li>-->
