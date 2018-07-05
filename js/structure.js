@@ -139,16 +139,16 @@ var Structure = {
                         "id": "subgalery-personnage"
                     },
 
+					"cgLarge": {
+                        "height": 500,
+                        "title": "2D Designer",
+                        "id": "subgalery-cgLarge"
+                    },
+                    
                     "speedPaint": {
                         "height": 300,
                         "title": "Speed Paint",
                         "id": "subgalery-speedPaint"
-                    },
-                    
-                    "cgLarge": {
-                        "height": 500,
-                        "title": "2D Designer",
-                        "id": "subgalery-cgLarge"
                     }
                 }
             },
