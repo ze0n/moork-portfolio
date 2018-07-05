@@ -11,7 +11,7 @@ var Structure = {
             "title": "Projects in Theater",
             "projects": {
 				 "afisha": {
-                    "height": 300,
+                    "height": 500,
                     "title": "Theater posters",
                     "id": "subgalery-afisha"
                 },
