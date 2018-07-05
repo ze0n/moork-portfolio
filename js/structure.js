@@ -22,7 +22,7 @@ var Structure = {
                     "id": "subgalery-naturemort",
                     "description":
                         "<p>"+
-                        "<b>Scenario:</b> The play is based on the texts of Fyodor Dostoevsky<br/>"+
+                        "<b>Author:</b> The play is based on the texts of Fyodor Dostoevsky<br/>"+
                         "<b>Venue:</b> St. Petersburg, independent project, 2018<br/>"+
                         "<b>Stage director:</b> Sofia Sirakonyan<br/>"+
                         "<b>Role:</b> Stage designer and video designer"+
@@ -35,7 +35,7 @@ var Structure = {
                     "id": "subgalery-cinderella",
                     "description": 
                         "<p>"+
-                        "<b>Scenario:</b> Cinderella by Joёl Pommerat<br/>"+
+                        "<b>Author:</b> Cinderella by Joёl Pommerat<br/>"+
                         "<b>Venue:</b> Kirov Drama Theater, 2016<br/>"+
                         "<b>Stage director:</b> Oleg Stepanov<br/>"+
                         "<b>Role:</b> stage designer and costume designer"+
@@ -48,7 +48,7 @@ var Structure = {
                     "id": "subgalery-diary",
                     "description": 
                         "<p>"+
-                        "<b>Scenario:</b> Diary of a Madman by Nikolay Gogol<br/>"+
+                        "<b>Author:</b> Diary of a Madman by Nikolay Gogol<br/>"+
                         "<b>Venue:</b> St. Petersburg Drama Theater named by Countess S.V. Panina, 2013<br/>"+
                         "<b>Stage director:</b> Alexandra Shagoyko<br/>"+
                         "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
@@ -61,7 +61,7 @@ var Structure = {
                     "id": "subgalery-emigrants",
                     "description":
                         "<p>"+
-                        "<b>Scenario:</b> Emigrants by Slavomir Mrozek<br/>"+
+                        "<b>Author:</b> Emigrants by Slavomir Mrozek<br/>"+
                         "<b>Venue:</b> Anna Akhmatova Museum in the Fountain House, 2015<br/>"+
                         "<b>Stage director:</b> Elena Troyan<br/>"+
                         "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
@@ -73,7 +73,7 @@ var Structure = {
                     "id": "subgalery-gazzetta",
                     "description": 
                         "<p>"+
-                        "<b>Scenario:</b> La Gazzetta opera buff by Gioacchino Rossini<br/>"+
+                        "<b>Author:</b> La Gazzetta opera buff by Gioacchino Rossini<br/>"+
                         "<b>Venue:</b> St. Petersburg State Children's Musical Theater, 2015<br/>"+
                         "<b>Stage director:</b> Sofia Sirakonyan<br/>"+
                         "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
@@ -85,7 +85,7 @@ var Structure = {
                     "id": "subgalery-swift",
                     "description": 
                         "<p>"+
-                        "<b>Scenario:</b> The house that Swift built by Grigory Gorin<br/>"+
+                        "<b>Author:</b> The house that Swift built by Grigory Gorin<br/>"+
                         "<b>Venue:</b> St. Petersburg graduation project 2016<br/>"+
                         "<b>Role:</b> stage designer and costume designer"+
                         "</p>"
@@ -96,7 +96,7 @@ var Structure = {
                     "id": "subgalery-elsa",
                     "description": 
                         "<p>"+
-                        "<b>Scenario:</b> The land of Elsa by Jaroslava Pulinovich<br/>"+
+                        "<b>Author:</b> The land of Elsa by Jaroslava Pulinovich<br/>"+
                         "<b>Venue:</b> Sarapul Drama Theater, premiere 2016<br/>"+
                         "<b>Stage director:</b> Oleg Stepanov<br/>"+
                         "<b>Role:</b> stage designer"+
@@ -108,7 +108,7 @@ var Structure = {
                     "id": "subgalery-pinocchio",
                     "description": 
                         "<p>"+
-                        "<b>Scenario:</b> The Adventures of Pinocchio by Carlo Collodi<br/>"+
+                        "<b>Author:</b> The Adventures of Pinocchio by Carlo Collodi<br/>"+
                         "<b>Venue:</b> Sarapul Drama Theater, 2016<br/>"+
                         "<b>Stage director:</b> Vladimir Zavarzin<br/>"+
                         "<b>Role:</b> artist director and costume design"+
