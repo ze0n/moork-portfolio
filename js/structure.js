@@ -24,7 +24,7 @@ var Structure = {
                         "<p>"+
                         "<b>Author:</b> The play is based on the texts of Fyodor Dostoevsky<br/>"+
                         "<b>Venue:</b> St. Petersburg, independent project, 2018<br/>"+
-                        "<b>Stage director:</b> Sofia Sirakonyan<br/>"+
+                        "<b>Stage director:</b> Alexandra Shagoyko<br/>"+
                         "<b>Role:</b> Stage designer and video designer"+
                         "</p>"
                 },
@@ -139,7 +139,7 @@ var Structure = {
                 "projects": {
 
                     "personnage": {
-                        "height": 300,
+                        "height": 400,
                         "title": "Character design",
                         "id": "subgalery-personnage"
                     },
@@ -179,7 +179,6 @@ var Structure = {
 
         { "file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["speedPaint"], "col": "col2", "w": 928, "h": 900 },
 
-        {"file": "cg_ptichka_928_900.jpg", "description": "asd", "tags": ["naturemort"], "col": "col2", "w": 928, "h": 900 },
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 928, "h": 900 },
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 928, "h": 900 },
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 928, "h": 900 },
@@ -508,6 +507,48 @@ var Structure = {
             "w": 2545,
             "h": 900
         },
+		
+		
+		{
+			"file": "naturemort-afish-636_900.jpg",
+			"description": "",
+			"tags": ["stage", "naturemort"],
+			"col": "col2",
+            "w": 636,
+            "h": 900
+		},
+		{
+			"file": "naturemort-ph4-720_900.jpg",
+			"description": "",
+			"tags": ["stage", "naturemort"],
+			"col": "col2",
+            "w": 720,
+            "h": 900
+		},
+		{
+			"file": "naturemort-ph2-720_900.jpg",
+			"description": "",
+			"tags": ["stage", "naturemort"],
+			"col": "col2",
+            "w": 720,
+            "h": 900
+		},
+		{
+			"file": "naturemort-ph3-1200_900.jpg",
+			"description": "",
+			"tags": ["stage", "naturemort"],
+			"col": "col2",
+            "w": 1200,
+            "h": 900
+		},
+		{
+			"file": "naturemort-ph5-720_900.jpg",
+			"description": "",
+			"tags": ["stage", "naturemort"],
+			"col": "col2",
+            "w": 720,
+            "h": 900
+		},
 
 
 
@@ -632,19 +673,19 @@ var Structure = {
             "h": 900
 		},
 		{
-			"file": "stage_plakat_698_900.jpg",
+			"file": "poster-godot-636-900.jpg",
 			"description": "",
 			"tags": ["stage", "afisha"],
 			"col": "col2",
-            "w": 698,
+            "w": 636,
             "h": 900
 		},
         {
-            "file": "afisha-bon-637-900.jpg",
+            "file": "afisha-zoly-636-900.jpg",
             "description": "",
             "tags": ["stage", "afisha"],
             "col": "col2",
-            "w": 637,
+            "w": 636,
             "h": 900
         },
         {
@@ -677,6 +718,14 @@ var Structure = {
             "tags": ["personnage"],
             "col": "col4",
             "w": 1204,
+            "h": 900
+        },
+		{
+            "file": "2d-Dame4-1282-900.jpg",
+            "description": "",
+            "tags": ["personnage"],
+            "col": "col4",
+            "w": 1282,
             "h": 900
         },
 		{
