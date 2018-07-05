@@ -54,33 +54,33 @@ var Structure = {
                         "<b>Role:</b> stage designer and costume designer"+
                         "</p>"
                 },
-
-                "diary": {
-                    "height": 300,
-                    "title": "“Diary of a Madman”",
-                    "id": "subgalery-diary",
+				
+				  "swift": {
+                    "height": 200,
+                    "title": "“The house that Swift built”",
+                    "id": "subgalery-swift",
                     "description": 
                         "<p>"+
-                        "<b>Author:</b> Diary of a Madman by Nikolay Gogol<br/>"+
-                        "<b>Venue:</b> St. Petersburg Drama Theater named by Countess S.V. Panina, 2013<br/>"+
-                        "<b>Stage director:</b> Alexandra Shagoyko<br/>"+
-                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
+                        "<b>Author:</b> The house that Swift built by Grigory Gorin<br/>"+
+                        "<b>Venue:</b> St. Petersburg graduation project 2016<br/>"+
+                        "<b>Role:</b> stage designer and costume designer"+
                         "</p>"
                 },
-
-                "emigrants": {
-                    "height": 300,
-                    "title": "“Emigrants”",
-                    "id": "subgalery-emigrants",
-                    "description":
+				
+				"pinocchio": {
+                    "height": 200,
+                    "title": "“The Adventures of Pinocchio”",
+                    "id": "subgalery-pinocchio",
+                    "description": 
                         "<p>"+
-                        "<b>Author:</b> Emigrants by Slavomir Mrozek<br/>"+
-                        "<b>Venue:</b> Anna Akhmatova Museum in the Fountain House, 2015<br/>"+
-                        "<b>Stage director:</b> Elena Troyan<br/>"+
-                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
+                        "<b>Author:</b> The Adventures of Pinocchio by Carlo Collodi<br/>"+
+                        "<b>Venue:</b> Sarapul Drama Theater, 2016<br/>"+
+                        "<b>Stage director:</b> Vladimir Zavarzin<br/>"+
+                        "<b>Role:</b> artist director and costume design"+
                         "</p>"
                 },
-                "gazzetta": {
+				
+				  "gazzetta": {
                     "height": 300,
                     "title": "“La Gazzetta”",
                     "id": "subgalery-gazzetta",
@@ -92,28 +92,30 @@ var Structure = {
                         "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
                         "</p>"
                 },
-                "swift": {
-                    "height": 200,
-                    "title": "“The house that Swift built”",
-                    "id": "subgalery-swift",
-                    "description": 
+				
+				   "emigrants": {
+                    "height": 300,
+                    "title": "“Emigrants”",
+                    "id": "subgalery-emigrants",
+                    "description":
                         "<p>"+
-                        "<b>Author:</b> The house that Swift built by Grigory Gorin<br/>"+
-                        "<b>Venue:</b> St. Petersburg graduation project 2016<br/>"+
-                        "<b>Role:</b> stage designer and costume designer"+
+                        "<b>Author:</b> Emigrants by Slavomir Mrozek<br/>"+
+                        "<b>Venue:</b> Anna Akhmatova Museum in the Fountain House, 2015<br/>"+
+                        "<b>Stage director:</b> Elena Troyan<br/>"+
+                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
                         "</p>"
                 },
-               
-                "pinocchio": {
-                    "height": 200,
-                    "title": "“The Adventures of Pinocchio”",
-                    "id": "subgalery-pinocchio",
+
+                "diary": {
+                    "height": 300,
+                    "title": "“Diary of a Madman”",
+                    "id": "subgalery-diary",
                     "description": 
                         "<p>"+
-                        "<b>Author:</b> The Adventures of Pinocchio by Carlo Collodi<br/>"+
-                        "<b>Venue:</b> Sarapul Drama Theater, 2016<br/>"+
-                        "<b>Stage director:</b> Vladimir Zavarzin<br/>"+
-                        "<b>Role:</b> artist director and costume design"+
+                        "<b>Author:</b> Diary of a Madman by Nikolay Gogol<br/>"+
+                        "<b>Venue:</b> St. Petersburg Drama Theater named by Countess S.V. Panina, 2013<br/>"+
+                        "<b>Stage director:</b> Alexandra Shagoyko<br/>"+
+                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
                         "</p>"
                 },
 
