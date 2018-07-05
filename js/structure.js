@@ -180,11 +180,23 @@ var Structure = {
         { "file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["speedPaint"], "col": "col2", "w": 928, "h": 900 },
 
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 928, "h": 900 },
-        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 928, "h": 900 },
+		
+		
+        {"file": "gazzetta-afish-637_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 637, "h": 900 },
+		{"file": "gazzetta-ph1-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph2-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph3-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph4-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph5-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph6-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		
+		
+		
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 928, "h": 900 },
 		
 		
-        {"file": "elsa-scen-1237-900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1237, "h": 900 },
+        {"file": "elsa-afish-636_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 636, "h": 900 },
+		{"file": "elsa-scen-1237-900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1237, "h": 900 },
 		{"file": "elsa-scen2-1268-900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1268, "h": 900 },
 		{"file": "elsa-scen3-1342_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1342, "h": 900 },
 		{"file": "elsa-scen4-1411_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1411, "h": 900 },
@@ -465,6 +477,14 @@ var Structure = {
 
 
         {
+            "file": "afisha-zoly-636-900.jpg",
+            "description": "",
+            "tags": ["stage", "cinderella"],
+            "col": "col2",
+            "w": 636,
+            "h": 900
+        },
+		 {
             "file": "kostum-zoly2-2545-900.jpg",
             "description": "Costumes #1, aquarelle",
             "tags": ["stage", "cinderella"],
@@ -480,22 +500,49 @@ var Structure = {
             "w": 2545,
             "h": 900
         },
-        {
-            "file": "kostum-diplom-2545-900.jpg",
+		 {
+            "file": "cinderella-ph1-599_900.jpg",
             "description": "",
-            "tags": ["stage", "swift"],
+            "tags": ["stage", "cinderella"],
             "col": "col2",
-            "w": 2545,
+            "w": 599,
             "h": 900
         },
-        {
-            "file": "kostum-diplom2-2545-900.jpg",
+		 {
+            "file": "cinderella-ph2-1351_900.jpg",
             "description": "",
-            "tags": ["stage", "swift"],
+            "tags": ["stage", "cinderella"],
             "col": "col2",
-            "w": 2545,
+            "w": 1351,
             "h": 900
         },
+		 {
+            "file": "cinderella-ph3-1350_900.jpg",
+            "description": "",
+            "tags": ["stage", "cinderella"],
+            "col": "col2",
+            "w": 1350,
+            "h": 900
+        },
+		 {
+            "file": "cinderella-ph4-1348_900.jpg",
+            "description": "",
+            "tags": ["stage", "cinderella"],
+            "col": "col2",
+            "w": 1348,
+            "h": 900
+        },
+		{
+            "file": "cinderella-ph5-1348_900.jpg",
+            "description": "",
+            "tags": ["stage", "cinderella"],
+            "col": "col2",
+            "w": 1348,
+            "h": 900
+        },
+		
+		
+        
         {
             "file": "kostum-pinokkio-2545-900.jpg",
             "description": "",
@@ -512,6 +559,48 @@ var Structure = {
             "w": 2545,
             "h": 900
         },
+		{
+            "file": "pinocchio-ph1-1351_900.jpg",
+            "description": "",
+            "tags": ["stage", "pinocchio"],
+            "col": "col2",
+            "w": 1351,
+            "h": 900
+        },
+		{
+            "file": "pinocchio-ph2-758_900.jpg",
+            "description": "",
+            "tags": ["stage", "pinocchio"],
+            "col": "col2",
+            "w": 758,
+            "h": 900
+        },
+		{
+            "file": "pinocchio-ph3-893_900.jpg",
+            "description": "",
+            "tags": ["stage", "pinocchio"],
+            "col": "col2",
+            "w": 893,
+            "h": 900
+        },
+		{
+            "file": "pinocchio-ph4-1414_900.jpg",
+            "description": "",
+            "tags": ["stage", "pinocchio"],
+            "col": "col2",
+            "w": 1414,
+            "h": 900
+        },
+		{
+            "file": "pinocchio-ph5-796_900.jpg",
+            "description": "",
+            "tags": ["stage", "pinocchio"],
+            "col": "col2",
+            "w": 796,
+            "h": 900
+        },
+		
+		
 		
 		
 		{
@@ -554,9 +643,25 @@ var Structure = {
             "w": 720,
             "h": 900
 		},
-
-
-
+		
+		
+		
+		{
+            "file": "kostum-diplom-2545-900.jpg",
+            "description": "",
+            "tags": ["stage", "swift"],
+            "col": "col2",
+            "w": 2545,
+            "h": 900
+        },
+        {
+            "file": "kostum-diplom2-2545-900.jpg",
+            "description": "",
+            "tags": ["stage", "swift"],
+            "col": "col2",
+            "w": 2545,
+            "h": 900
+        },
 		{
 			"file": "stage_diplom4_1211_900.jpg",
 			"description": "",
