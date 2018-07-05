@@ -179,7 +179,11 @@ var Structure = {
 
         { "file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["speedPaint"], "col": "col2", "w": 928, "h": 900 },
 
-        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 928, "h": 900 },
+        {"file": "diary-ph1-599_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "diary-ph2-1102_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 1102, "h": 900 },
+		{"file": "diary-ph3-1354_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 1354, "h": 900 },
+		{"file": "diary-ph4-1314_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 1314, "h": 900 },
+		{"file": "diary-ph5-599_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 599, "h": 900 },
 		
 		
         {"file": "gazzetta-afish-637_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 637, "h": 900 },
