@@ -182,7 +182,12 @@ var Structure = {
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 928, "h": 900 },
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 928, "h": 900 },
         {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 928, "h": 900 },
-        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 928, "h": 900 },
+		
+		
+        {"file": "elsa-scen-1237-900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1237, "h": 900 },
+		{"file": "elsa-scen2-1268-900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1268, "h": 900 },
+		{"file": "elsa-scen3-1342_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1342, "h": 900 },
+		{"file": "elsa-scen4-1411_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1411, "h": 900 },
 
 
 
