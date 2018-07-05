@@ -36,7 +36,7 @@ var Structure = {
                     "description": 
                         "<p>"+
                         "<b>Author:</b> The land of Elsa by Jaroslava Pulinovich<br/>"+
-                        "<b>Venue:</b> Sarapul Drama Theater, premiere 2016<br/>"+
+                        "<b>Venue:</b> Sarapul Drama Theater, 2016<br/>"+
                         "<b>Stage director:</b> Oleg Stepanov<br/>"+
                         "<b>Role:</b> stage designer"+
                         "</p>"
@@ -89,7 +89,7 @@ var Structure = {
                         "<b>Author:</b> La Gazzetta opera buff by Gioacchino Rossini<br/>"+
                         "<b>Venue:</b> St. Petersburg State Children's Musical Theater, 2015<br/>"+
                         "<b>Stage director:</b> Sofia Sirakonyan<br/>"+
-                        "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
+                        "<b>Role:</b> costume designer in the team with Anna Podvolotskaya"+
                         "</p>"
                 },
 				
@@ -192,7 +192,12 @@ var Structure = {
 		
 		
 		
-        {"file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 928, "h": 900 },
+        {"file": "emigrants-ph1-636_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 636, "h": 900 },
+		{"file": "emigrants-ph2-599_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "emigrants-ph3-599_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "emigrants-ph4-1351_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 1351, "h": 900 },
+		{"file": "emigrants-ph5-599_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "emigrants-ph6-1351_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 1351, "h": 900 },
 		
 		
         {"file": "elsa-afish-636_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 636, "h": 900 },
