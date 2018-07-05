@@ -139,7 +139,7 @@ var Structure = {
                 "projects": {
 
                     "personnage": {
-                        "height": 500,
+                        "height": 300,
                         "title": "Character design",
                         "id": "subgalery-personnage"
                     },
