@@ -118,17 +118,33 @@ var Structure = {
                         "<b>Role:</b> stage designer and costume designer in the team with Anna Podvolotskaya"+
                         "</p>"
                 },
+				
+				"apart": {
+                    "height": 200,
+                    "title": "“Zoya's Apartment”",
+                    "id": "subgalery-apart",
+                    "description": 
+                        "<p>"+
+                        "<b>Author:</b> Zoya's Apartment by Michael Bulgakov<br/>"+
+                        "<b>Student project:</b> stage designer and costume designer"+
+                        "</p>"
+                },
+				
+				"dragon": {
+                    "height": 200,
+                    "title": "“The Dragon”",
+                    "id": "subgalery-dragon",
+                    "description": 
+                        "<p>"+
+                        "<b>Author:</b> The Dragon by Evgeny Schwartz<br/>"+
+                        "<b>Student project:</b> stage designer and costume designer"+
+                        "</p>"
+                },
 
                 "scenography": {
                     "height": 200,
                     "title": "Scenography",
                     "id": "subgalery-scenography"
-                },
-
-                "costumes": {
-                    "height": 200,
-                    "title": "Costumes",
-                    "id": "subgalery-costumes"
                 }
             }
         },
@@ -706,7 +722,7 @@ var Structure = {
 		{
 			"file": "stage_dragon_1393_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "dragon"],
 			"col": "col2",
             "w": 1393,
             "h": 900
@@ -714,7 +730,7 @@ var Structure = {
 		{
 			"file": "stage_dragon2_1397_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "dragon"],
 			"col": "col2",
             "w": 1397,
             "h": 900
@@ -722,7 +738,7 @@ var Structure = {
 		{
 			"file": "stage_dragon3_1394_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "dragon"],
 			"col": "col2",
             "w": 1394,
             "h": 900
@@ -754,7 +770,7 @@ var Structure = {
 		{
 			"file": "stage_zoika_1312_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "apart"],
 			"col": "col2",
             "w": 1312,
             "h": 900
@@ -762,7 +778,7 @@ var Structure = {
 		{
 			"file": "stage_zoika_1314_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "apart"],
 			"col": "col2",
             "w": 1314,
             "h": 900
@@ -770,7 +786,7 @@ var Structure = {
 		{
 			"file": "stage_zoika_1323_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "apart"],
 			"col": "col2",
             "w": 1323,
             "h": 900
@@ -778,7 +794,7 @@ var Structure = {
 		{
 			"file": "stage_zoika_1335_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "apart"],
 			"col": "col2",
             "w": 1335,
             "h": 900
