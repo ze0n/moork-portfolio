@@ -804,8 +804,10 @@ var Structure = {
             "w": 1335,
             "h": 900
 		},
+		
+		
 		{
-			"file": "poster-godot-636-900.jpg",
+			"file": "naturemort-afish-636_900.jpg",
 			"description": "",
 			"tags": ["stage", "afisha"],
 			"col": "col2",
@@ -821,13 +823,22 @@ var Structure = {
             "h": 900
         },
 		{
-			"file": "naturemort-afish-636_900.jpg",
+			"file": "poster-godot-636-900.jpg",
 			"description": "",
 			"tags": ["stage", "afisha"],
 			"col": "col2",
             "w": 636,
             "h": 900
 		},
+		{
+			"file": "afisha-swift-675_900.jpg",
+			"description": "",
+			"tags": ["stage", "afisha"],
+			"col": "col2",
+            "w": 675,
+            "h": 900
+		},
+		
         {
             "file": "afisha-zhizn-636-900.jpg",
             "description": "",
