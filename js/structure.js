@@ -17,7 +17,7 @@ var Structure = {
                 },
 				
                 "naturemort": {
-                    "height": 300,
+                    "height": 200,
                     "title": '“Nature Mort”',
                     "id": "subgalery-naturemort",
                     "description":
@@ -30,7 +30,7 @@ var Structure = {
                 },
 				
 				 "elsa": {
-                    "height": 300,
+                    "height": 200,
                     "title": "“The land of Elsa”",
                     "id": "subgalery-elsa",
                     "description": 
@@ -81,7 +81,7 @@ var Structure = {
                 },
 				
 				  "gazzetta": {
-                    "height": 300,
+                    "height": 200,
                     "title": "“La Gazzetta”",
                     "id": "subgalery-gazzetta",
                     "description": 
@@ -94,7 +94,7 @@ var Structure = {
                 },
 				
 				   "emigrants": {
-                    "height": 300,
+                    "height": 200,
                     "title": "“Emigrants”",
                     "id": "subgalery-emigrants",
                     "description":
@@ -107,7 +107,7 @@ var Structure = {
                 },
 
                 "diary": {
-                    "height": 300,
+                    "height": 200,
                     "title": "“Diary of a Madman”",
                     "id": "subgalery-diary",
                     "description": 
@@ -143,7 +143,7 @@ var Structure = {
 
                 "forest": {
                     "height": 200,
-                    "title": "The Forest",
+                    "title": "“The Forest”",
                     "id": "subgalery-forest",
 					"description": 
                         "<p>"+
@@ -820,6 +820,14 @@ var Structure = {
             "w": 636,
             "h": 900
         },
+		{
+			"file": "naturemort-afish-636_900.jpg",
+			"description": "",
+			"tags": ["stage", "afisha"],
+			"col": "col2",
+            "w": 636,
+            "h": 900
+		},
         {
             "file": "afisha-zhizn-636-900.jpg",
             "description": "",
