@@ -141,10 +141,15 @@ var Structure = {
                         "</p>"
                 },
 
-                "scenography": {
+                "forest": {
                     "height": 200,
-                    "title": "Scenography",
-                    "id": "subgalery-scenography"
+                    "title": "The Forest",
+                    "id": "subgalery-forest",
+					"description": 
+                        "<p>"+
+                        "<b>Author:</b> The Forest by Alexander Ostrovsky<br/>"+
+                        "<b>Student project:</b> stage designer and costume designer"+
+                        "</p>"
                 }
             }
         },
@@ -746,7 +751,7 @@ var Structure = {
 		{
 			"file": "stage_les_1240_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "forest"],
 			"col": "col2",
             "w": 1240,
             "h": 900
@@ -754,7 +759,7 @@ var Structure = {
 		{
 			"file": "stage_les_1243_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "forest"],
 			"col": "col2",
             "w": 1243,
             "h": 900
@@ -762,7 +767,7 @@ var Structure = {
 		{
 			"file": "stage_les_1270_900.jpg",
 			"description": "",
-			"tags": ["stage", "scenography"],
+			"tags": ["stage", "forest"],
 			"col": "col2",
             "w": 1270,
             "h": 900
@@ -797,14 +802,6 @@ var Structure = {
 			"tags": ["stage", "apart"],
 			"col": "col2",
             "w": 1335,
-            "h": 900
-		},
-		{
-			"file": "stage_meshanin_1287_900.jpg",
-			"description": "",
-			"tags": ["stage", "scenography"],
-			"col": "col2",
-            "w": 1287,
             "h": 900
 		},
 		{
