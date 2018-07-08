@@ -500,6 +500,14 @@ a.logo-link:hover{
     font-size: 14px;
 }
 
+.subgalery h3 {
+    margin-top: 20px;
+}
+
+.projectDescriprion {
+    /*background-color: #EEE;*/
+    border-radius: 5px;
+}
 
 .subgalery h1{
     margin-bottom: 5px;
