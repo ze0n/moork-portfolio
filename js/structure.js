@@ -899,27 +899,19 @@ var Structure = {
             "h": 1800
         },
 		{
-            "file": "2d-Dame-1204-900.jpg",
+            "file": "2d-Dame-2690_2000.jpg",
             "description": "",
             "tags": ["personnage"],
             "col": "col4",
-            "w": 1204,
-            "h": 900
+            "w": 2690,
+            "h": 2000
         },
 		{
-            "file": "2d-Dame4-1282-900.jpg",
+            "file": "2d-Dame6-1904_900.jpg",
             "description": "",
             "tags": ["personnage"],
             "col": "col4",
-            "w": 1282,
-            "h": 900
-        },
-		{
-            "file": "2d-Dame2-1931-900.jpg",
-            "description": "",
-            "tags": ["personnage"],
-            "col": "col4",
-            "w": 1931,
+            "w": 1904,
             "h": 900
         },
 		{
