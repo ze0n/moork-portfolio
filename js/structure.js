@@ -431,7 +431,49 @@ var Structure = {
 
 
 
-        {
+       
+		{
+			"file": "painting-model3-669_900.jpg",
+			"description": "",
+			"tags": ["painting"],
+			"col": "col2",
+            "w": 669,
+            "h": 900
+		},
+		{
+			"file": "painting_pastel_729_900.jpg",
+			"description": "",
+			"tags": ["painting"],
+			"col": "col2",
+            "w": 729,
+            "h": 900
+		},
+		{
+			"file": "painting-model2-518_900.jpg",
+			"description": "",
+			"tags": ["painting"],
+			"col": "col2",
+            "w": 518,
+            "h": 900
+		},
+		{
+			"file": "painting-model4-705_900.jpg",
+			"description": "",
+			"tags": ["painting"],
+			"col": "col2",
+            "w": 705,
+            "h": 900
+		},
+		{
+			"file": "painting-model-1004_900.jpg",
+			"description": "",
+			"tags": ["painting"],
+			"col": "col2",
+            "w": 1004,
+            "h": 900
+		},
+		
+		{
             "file": "painting_ylta_1316_900.jpg",
             "description": "",
             "tags": ["painting"],
@@ -445,14 +487,6 @@ var Structure = {
 			"tags": ["painting"],
 			"col": "col2",
             "w": 1239,
-            "h": 900
-		},
-		{
-			"file": "painting_katay_781_900.jpg",
-			"description": "",
-			"tags": ["painting"],
-			"col": "col2",
-            "w": 781,
             "h": 900
 		},
 		{
@@ -472,35 +506,19 @@ var Structure = {
             "h": 900
 		},
 		{
-			"file": "painting_pastel_729_900.jpg",
+			"file": "painting-natur2-766_900.jpg",
 			"description": "",
 			"tags": ["painting"],
 			"col": "col2",
-            "w": 729,
+            "w": 766,
             "h": 900
 		},
 		{
-			"file": "painting_susi_686_900.jpg",
+			"file": "painting-natur-1049_900.jpg",
 			"description": "",
 			"tags": ["painting"],
 			"col": "col2",
-            "w": 686,
-            "h": 900
-		},
-		{
-			"file": "painting_susi_803_900.jpg",
-			"description": "",
-			"tags": ["painting"],
-			"col": "col2",
-            "w": 803,
-            "h": 900
-		},
-		{
-			"file": "painting_tonay_743_900.jpg",
-			"description": "",
-			"tags": ["painting"],
-			"col": "col2",
-            "w": 743,
+            "w": 1049,
             "h": 900
 		},
 
