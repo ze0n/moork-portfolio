@@ -241,6 +241,14 @@ var Structure = {
             "w": 908,
             "h": 900
         },
+		{
+            "file": "cg-spidi-1146_900.jpg",
+            "description": "",
+            "tags": ["speedPaint"],
+            "col": "col2",
+            "w": 1146,
+            "h": 900
+        },
         {
             "file": "cg_naturmort2_883_900.jpg",
             "description": "",
@@ -249,7 +257,7 @@ var Structure = {
             "w": 883,
             "h": 900
         },
-        {
+		{
             "file": "cg_naturmort_tcvet2_636_900.jpg",
             "description": "",
             "tags": ["speedPaint"],
@@ -273,6 +281,7 @@ var Structure = {
             "w": 622,
             "h": 900
         },
+		
 
 
 		{
@@ -842,6 +851,14 @@ var Structure = {
         },
 		{
 			"file": "poster-godot-636-900.jpg",
+			"description": "",
+			"tags": ["stage", "afisha"],
+			"col": "col2",
+            "w": 636,
+            "h": 900
+		},
+		{
+			"file": "emigrants-ph1-636_900.jpg",
 			"description": "",
 			"tags": ["stage", "afisha"],
 			"col": "col2",
