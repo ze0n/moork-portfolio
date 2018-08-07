@@ -899,20 +899,20 @@ var Structure = {
             "h": 1800
         },
 		{
-            "file": "2d-Dame-2690_2000.jpg",
+            "file": "2d-dame2-3270_1800.jpg",
             "description": "",
             "tags": ["personnage"],
             "col": "col4",
-            "w": 2690,
-            "h": 2000
+            "w": 3270,
+            "h": 1800
         },
 		{
-            "file": "2d-Dame6-1904_900.jpg",
+            "file": "2d-dame-3270_1800.jpg",
             "description": "",
             "tags": ["personnage"],
             "col": "col4",
-            "w": 1904,
-            "h": 900
+            "w": 3270,
+            "h": 1800
         },
 		{
             "file": "2d-Dame3-1809-900.jpg",
