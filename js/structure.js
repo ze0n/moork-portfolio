@@ -166,7 +166,7 @@ var Structure = {
                     },
 
 					"cgLarge": {
-                        "height": 500,
+                        "height": 400,
                         "title": "2D Graphics",
                         "id": "subgalery-cgLarge"
                     },
@@ -915,11 +915,11 @@ var Structure = {
             "h": 1800
         },
 		{
-            "file": "2d-Dame3-1809-900.jpg",
+            "file": "2d-prop-900_900.jpg",
             "description": "",
-            "tags": ["personnage"],
+            "tags": ["cgLarge"],
             "col": "col4",
-            "w": 1809,
+            "w": 900,
             "h": 900
         },
         {
