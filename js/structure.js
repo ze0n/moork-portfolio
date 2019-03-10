@@ -8,7 +8,10 @@ var Structure = {
 	"Projects": {
 
         "stage": {
+            "bodyClass": "dark",
+            "style": "tiles",
             "title": "Projects in Theater",
+            "renderOutline": false,
             "projects": {
 				 "afisha": {
                     "height": 500,
@@ -18,7 +21,7 @@ var Structure = {
 				
                 "naturemort": {
                     "height": 200,
-                    "title": '“Nature Mort”',
+                    "title": 'Nature Mort',
                     "id": "subgalery-naturemort",
                     "description":
                         "<p>"+
@@ -31,7 +34,7 @@ var Structure = {
 				
 				 "elsa": {
                     "height": 200,
-                    "title": "“The land of Elsa”",
+                    "title": "The land of Elsa",
                     "id": "subgalery-elsa",
                     "description": 
                         "<p>"+
@@ -44,7 +47,7 @@ var Structure = {
 
                 "cinderella": {
                     "height": 200,
-                    "title": "“Cinderella”",
+                    "title": "Cinderella",
                     "id": "subgalery-cinderella",
                     "description": 
                         "<p>"+
@@ -57,7 +60,7 @@ var Structure = {
 				
 				  "swift": {
                     "height": 200,
-                    "title": "“The house that Swift built”",
+                    "title": "The house that Swift built",
                     "id": "subgalery-swift",
                     "description": 
                         "<p>"+
@@ -69,7 +72,7 @@ var Structure = {
 				
 				"pinocchio": {
                     "height": 200,
-                    "title": "“The Adventures of Pinocchio”",
+                    "title": "The Adventures of Pinocchio",
                     "id": "subgalery-pinocchio",
                     "description": 
                         "<p>"+
@@ -82,7 +85,7 @@ var Structure = {
 				
 				  "gazzetta": {
                     "height": 200,
-                    "title": "“La Gazzetta”",
+                    "title": "La Gazzetta",
                     "id": "subgalery-gazzetta",
                     "description": 
                         "<p>"+
@@ -95,7 +98,7 @@ var Structure = {
 				
 				   "emigrants": {
                     "height": 200,
-                    "title": "“Emigrants”",
+                    "title": "Emigrants",
                     "id": "subgalery-emigrants",
                     "description":
                         "<p>"+
@@ -108,7 +111,7 @@ var Structure = {
 
                 "diary": {
                     "height": 200,
-                    "title": "“Diary of a Madman”",
+                    "title": "Diary of a Madman",
                     "id": "subgalery-diary",
                     "description": 
                         "<p>"+
@@ -121,7 +124,7 @@ var Structure = {
 				
 				"apart": {
                     "height": 200,
-                    "title": "“Zoya's Apartment”",
+                    "title": "Zoya's Apartment",
                     "id": "subgalery-apart",
                     "description": 
                         "<p>"+
@@ -132,7 +135,7 @@ var Structure = {
 				
 				"dragon": {
                     "height": 200,
-                    "title": "“The Dragon”",
+                    "title": "The Dragon",
                     "id": "subgalery-dragon",
                     "description": 
                         "<p>"+
@@ -143,7 +146,7 @@ var Structure = {
 
                 "forest": {
                     "height": 200,
-                    "title": "“The Forest”",
+                    "title": "The Forest",
                     "id": "subgalery-forest",
 					"description": 
                         "<p>"+
@@ -198,38 +201,35 @@ var Structure = {
 
 	"Images": [
 
-        { "file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["speedPaint"], "col": "col2", "w": 928, "h": 900 },
+        { "file": "cg_ptichka_928_900.jpg", "description": "", "tags": ["stage", "speedPaint"], "col": "col2", "w": 928, "h": 900 },
 
-        {"file": "diary-ph1-599_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 599, "h": 900 },
-		{"file": "diary-ph2-1102_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 1102, "h": 900 },
-		{"file": "diary-ph3-1354_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 1354, "h": 900 },
-		{"file": "diary-ph4-1314_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 1314, "h": 900 },
-		{"file": "diary-ph5-599_900.jpg", "description": "", "tags": ["diary"], "col": "col2", "w": 599, "h": 900 },
+        {"file": "diary-ph1-599_900.jpg", "description": "", "tags": ["stage", "diary"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "diary-ph2-1102_900.jpg", "description": "", "tags":["stage", "diary"], "col": "col2", "w": 1102, "h": 900 },
+		{"file": "diary-ph3-1354_900.jpg", "description": "", "tags":["stage", "diary", "face"], "col": "col2", "w": 1354, "h": 900},
+		{"file": "diary-ph4-1314_900.jpg", "description": "", "tags":["stage", "diary"], "col": "col2", "w": 1314, "h": 900 },
+		{"file": "diary-ph5-599_900.jpg", "description": "", "tags": ["stage", "diary"], "col": "col2", "w": 599, "h": 900 },
+		
+        {"file": "gazzetta-afish-637_900.jpg", "description": "", "tags":["stage", "gazzetta"], "col": "col2", "w": 637, "h": 900 },
+		{"file": "gazzetta-ph1-1350_900.jpg", "description": "", "tags": ["stage", "gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph2-1350_900.jpg", "description": "", "tags": ["stage", "gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph3-1350_900.jpg", "description": "", "tags": ["stage", "gazzetta", "face"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph4-1350_900.jpg", "description": "", "tags": ["stage", "gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph5-1350_900.jpg", "description": "", "tags": ["stage", "gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		{"file": "gazzetta-ph6-1350_900.jpg", "description": "", "tags": ["stage", "gazzetta"], "col": "col2", "w": 1350, "h": 900 },
+		
+        {"file": "emigrants-ph1-636_900.jpg", "description": "", "tags": ["stage", "emigrants"], "col": "col2", "w": 636, "h": 900 },
+		{"file": "emigrants-ph2-599_900.jpg", "description": "", "tags": ["stage", "emigrants"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "emigrants-ph3-599_900.jpg", "description": "", "tags": ["stage", "emigrants"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "emigrants-ph4-1351_900.jpg", "description": "", "tags":["stage", "emigrants", "face"], "col": "col2", "w": 1351, "h": 900 },
+		{"file": "emigrants-ph5-599_900.jpg", "description": "", "tags": ["stage", "emigrants"], "col": "col2", "w": 599, "h": 900 },
+		{"file": "emigrants-ph6-1351_900.jpg", "description": "", "tags":["stage", "emigrants"], "col": "col2", "w": 1351, "h": 900 },
 		
 		
-        {"file": "gazzetta-afish-637_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 637, "h": 900 },
-		{"file": "gazzetta-ph1-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
-		{"file": "gazzetta-ph2-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
-		{"file": "gazzetta-ph3-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
-		{"file": "gazzetta-ph4-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
-		{"file": "gazzetta-ph5-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
-		{"file": "gazzetta-ph6-1350_900.jpg", "description": "", "tags": ["gazzetta"], "col": "col2", "w": 1350, "h": 900 },
-		
-		
-		
-        {"file": "emigrants-ph1-636_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 636, "h": 900 },
-		{"file": "emigrants-ph2-599_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 599, "h": 900 },
-		{"file": "emigrants-ph3-599_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 599, "h": 900 },
-		{"file": "emigrants-ph4-1351_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 1351, "h": 900 },
-		{"file": "emigrants-ph5-599_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 599, "h": 900 },
-		{"file": "emigrants-ph6-1351_900.jpg", "description": "", "tags": ["emigrants"], "col": "col2", "w": 1351, "h": 900 },
-		
-		
-        {"file": "elsa-afish-636_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 636, "h": 900 },
-		{"file": "elsa-scen-1237-900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1237, "h": 900 },
-		{"file": "elsa-scen2-1268-900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1268, "h": 900 },
-		{"file": "elsa-scen3-1342_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1342, "h": 900 },
-		{"file": "elsa-scen4-1411_900.jpg", "description": "", "tags": ["elsa"], "col": "col2", "w": 1411, "h": 900 },
+        {"file": "elsa-afish-636_900.jpg", "description": "", "tags": ["stage", "elsa"], "col": "col2", "w": 636, "h": 900 },
+		{"file": "elsa-scen-1237-900.jpg", "description": "", "tags": ["stage", "elsa"], "col": "col2", "w": 1237, "h": 900 },
+		{"file": "elsa-scen2-1268-900.jpg", "description": "", "tags": ["stage", "elsa"], "col": "col2", "w": 1268, "h": 900 },
+		{"file": "elsa-scen3-1342_900.jpg", "description": "", "tags": ["stage", "elsa"], "col": "col2", "w": 1342, "h": 900 },
+		{"file": "elsa-scen4-1411_900.jpg", "description": "", "tags": ["stage", "elsa", "face"], "col": "col2", "w": 1411, "h": 900 },
 
 
 
@@ -643,7 +643,7 @@ var Structure = {
 		{
             "file": "pinocchio-ph4-1414_900.jpg",
             "description": "",
-            "tags": ["stage", "pinocchio"],
+            "tags": ["stage", "pinocchio", "face"],
             "col": "col2",
             "w": 1414,
             "h": 900
@@ -687,7 +687,7 @@ var Structure = {
 		{
 			"file": "naturemort-ph3-1200_900.jpg",
 			"description": "",
-			"tags": ["stage", "naturemort"],
+			"tags": ["stage", "naturemort", "face"],
 			"col": "col2",
             "w": 1200,
             "h": 900
@@ -770,7 +770,7 @@ var Structure = {
 		{
 			"file": "stage_dragon3_1394_900.jpg",
 			"description": "",
-			"tags": ["stage", "dragon"],
+			"tags": ["stage", "dragon", "face"],
 			"col": "col2",
             "w": 1394,
             "h": 900

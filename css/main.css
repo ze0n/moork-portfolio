@@ -516,3 +516,61 @@ a.logo-link:hover{
 .subgalery p{
     margin: 5px;
 }
+
+body.dark {
+    background-color: black;
+}
+
+body.dark a.logo-link {
+    color: white;
+}
+
+body.dark div.social {
+    background-color: #333;
+}
+
+
+.block-image-2 {
+/*    vertical-align: middle;
+    text-align: center;*/
+    /*position: relative;*/
+/*    height: 100%;
+    line-height: 100%;
+    vertical-align: middle;
+    text-align: center;
+*/
+
+    text-align: center;
+    
+}
+
+.block-image-2 span.title {
+    color: #FFFFFF00;
+    font-size: 100px;
+    font-family: "Segoe UI", "Helvetica";
+    font-weight: bold;
+    line-height: 100px;
+    
+    vertical-align: middle;
+    text-align: center;
+    /*display: inline;*/
+    display: inline-block;
+    position: relative;
+
+    display: table-cell;
+    vertical-align:middle;
+    text-align: center;
+
+    z-index: 100;
+    height: 300px;
+    width: 100%;
+}
+
+.block-image-2 span.title:hover {
+    color: #FFFFFFEE;
+}
+.block-image-2 img {
+    vertical-align: middle;
+}
+
+

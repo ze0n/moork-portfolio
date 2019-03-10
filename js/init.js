@@ -44,8 +44,17 @@ $(function () {
             color = $(this).attr('rel').split(' ')[0],
             filterClass = '.' + color;
 
+        $("body").removeClass();
+
         $(".welcome").hide();
         window.PR.renderPageByTag(color);
+
+        if(window.PR.portfolio.structure.Projects[color] !== undefined){
+            var page = window.PR.portfolio.structure.Projects[color];
+            if(page.bodyClass !== undefined){
+                $("body").addClass(page.bodyClass);
+            }
+        }
 
         // set hash in URL
         window.location.hash = color;

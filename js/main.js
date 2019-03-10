@@ -72,6 +72,7 @@ class PortfolioRenderer {
         this.portfolio = portfolio;
 
         this.blockTemplate = $('#block-template-1').html();
+        this.blockTemplate2 = $('#block-template-2').html();
         Mustache.parse(this.blockTemplate);
     }
 
@@ -105,34 +106,48 @@ class PortfolioRenderer {
             Mustache.parse(subgaleryTemplate);
 
 
-            var ul = document.createElement("ul");
-            var h = document.createElement("h1");
-            $(h).text(categories[tags[0]].title);
-            for(var projectKey in projects) {
-                var li = document.createElement("li");
-                var a = document.createElement("a");
-                a.href="#anchor-subgalery-"+projectKey
-                $(a).html(projects[projectKey].title);
-                li.appendChild(a);
-                ul.appendChild(li);
+            var page = categories[tags[0]];
+
+            if(page.renderOutline === undefined || page.renderOutline === true){
+
+                var ul = document.createElement("ul");
+                var h = document.createElement("h1");
+                $(h).text(categories[tags[0]].title);
+                for(var projectKey in projects) {
+                    var li = document.createElement("li");
+                    var a = document.createElement("a");
+                    a.href="#anchor-subgalery-"+projectKey
+                    $(a).html(projects[projectKey].title);
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                }
+                dock.append(h);
+                dock.append(ul);
             }
-            dock.append(h);
-            dock.append(ul);
 
-            for(var projectKey in projects) {
+            if(page.style === undefined || page.style === "structure")
+            {
+                for(var projectKey in projects) {
+                    var project = projects[projectKey];
+                    var rendered = Mustache.render(subgaleryTemplate, project);
+                    dock.append(rendered);
+                    this.renderGalery($("#"+project.id), [projectKey], project.height);
+                };
+            }
+            else if(page.style === "tiles")
+            {
+                // TODO: finish this
+                this.renderProjectGalery(dock, ["face"], 300, tags[0]);
+            }
 
-                var project = projects[projectKey];
-                var rendered = Mustache.render(subgaleryTemplate, project);
-                dock.append(rendered);
-                this.renderGalery($("#"+project.id), [projectKey], project.height);
-            };
         }
         else {
             this.renderGalery(dock, tags, 300);
         }
     }
 
-    renderGalery(dock, tags, chosenHeight) {
+
+    renderProjectGalery(dock, tags, chosenHeight, page) {
         var images;
         if (tags[0] == "all")
             images = this.portfolio.structure.Images;
@@ -144,15 +159,108 @@ class PortfolioRenderer {
         var index = 0;
 
         images.forEach(function (image) {
-            var rendered = Mustache.render(pr.blockTemplate,
+
+            console.log(image);
+            var rendered = Mustache.render(pr.blockTemplate2,
                 {
                     url: Settings.imagePath + image.file,
                     tmbUrl: Settings.imagePath + "tbn/" + image.file,
                     description: image.description,
                     tags: image.tags,
                     col: image.col,
-                    ind: index
+                    ind: index,
+                    title: Structure.Projects[page].projects[image.tags[1]].title,
+                    shortDescription: Structure.Projects[page].projects[image.tags[1]].shortDescription,
                 });
+
+            index += 1;
+            dock.append(rendered);
+        });
+
+        // var chosenHeight = 300;
+        // if (tags[0] == "stage" || tags[0] == "costumes" || tags[0] == "afisha" || tags[0] == "scenography" ){
+        //     chosenHeight = 200;
+        // }
+
+        var justifiedGaleryOptions = {
+            rowHeight: chosenHeight,
+            lastRow: 'nojustify',
+            maxRowHeight: 350,
+            margins: 10
+        };
+
+        dock.justifiedGallery(justifiedGaleryOptions);
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+
+
+// build items array
+
+        var items = images.map(function (image) {
+            return {
+                src: Settings.imagePath + image.file,
+                w: image.w !== undefined ? image.w : 500,
+                h: image.h !== undefined ? image.h : 500,
+                title: image.description
+            }
+        });
+
+        $(dock).find(".zoomable-image").click(function(a) {
+            // define options (if needed)
+            var options = {
+                // optionName: 'option value'
+                // for example:
+                index: parseInt(a.target.dataset.index) // start at first slide
+            };
+
+            var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+            var pind = parseInt(a.target.dataset.index,10); 
+            gallery.goTo(pind);
+        });
+
+    }
+
+    renderGalery(dock, tags, chosenHeight, style="default") {
+        var images;
+        if (tags[0] == "all")
+            images = this.portfolio.structure.Images;
+        else
+            images = this.portfolio.selectImagesByTags(tags);
+
+        var pr = this;
+
+        var index = 0;
+
+        images.forEach(function (image) {
+
+            if(style === "default"){
+                var rendered = Mustache.render(pr.blockTemplate,
+                    {
+                        url: Settings.imagePath + image.file,
+                        tmbUrl: Settings.imagePath + "tbn/" + image.file,
+                        description: image.description,
+                        tags: image.tags,
+                        col: image.col,
+                        ind: index
+                    });
+            }
+
+            if(style === "face"){
+                console.log(image);
+                var rendered = Mustache.render(pr.blockTemplate2,
+                    {
+                        url: Settings.imagePath + image.file,
+                        tmbUrl: Settings.imagePath + "tbn/" + image.file,
+                        description: image.description,
+                        tags: image.tags,
+                        col: image.col,
+                        ind: index,
+                        title: Structure.Projects[image.tags[0]].title,
+                        shortDescription: Structure.Projects[image.tags[0]].shortDescription,
+                    });
+            }
+
             index += 1;
             dock.append(rendered);
         });
