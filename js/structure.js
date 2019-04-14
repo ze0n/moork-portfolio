@@ -547,6 +547,17 @@ var Structure = {
             "w": 2545,
             "h": 900
         },
+
+
+         {
+            "file": "cinderella-ph4-1348_900.jpg",
+            "description": "",
+            "tags": ["stage", "cinderella"],
+            "col": "col2",
+            "w": 1348,
+            "h": 900
+        },
+
 		 {
             "file": "cinderella-ph1-599_900.jpg",
             "description": "",
@@ -555,6 +566,15 @@ var Structure = {
             "w": 599,
             "h": 900
         },
+
+                {
+            "file": "cinderella-ph5-1348_900.jpg",
+            "description": "",
+            "tags": ["stage", "cinderella"],
+            "col": "col2",
+            "w": 1348,
+            "h": 900
+        },     
 		 {
             "file": "cinderella-ph2-1351_900.jpg",
             "description": "",
@@ -569,22 +589,6 @@ var Structure = {
             "tags": ["stage", "cinderella"],
             "col": "col2",
             "w": 1350,
-            "h": 900
-        },
-		 {
-            "file": "cinderella-ph4-1348_900.jpg",
-            "description": "",
-            "tags": ["stage", "cinderella"],
-            "col": "col2",
-            "w": 1348,
-            "h": 900
-        },
-		{
-            "file": "cinderella-ph5-1348_900.jpg",
-            "description": "",
-            "tags": ["stage", "cinderella"],
-            "col": "col2",
-            "w": 1348,
             "h": 900
         },
 		        {
