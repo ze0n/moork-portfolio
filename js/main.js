@@ -121,11 +121,8 @@ class PortfolioRenderer {
     }
 
     renderPageByTags(tags) {
-        if(tags[0]=="about"){
-
-            if($("#mygalleryContainer").hasClass("hidden1")){
-                this.returnToProjects();
-            }
+        if($("#mygalleryContainer").hasClass("hidden1")){
+            this.returnToProjects();
         }
 
         var dock = $("#mygallery");
