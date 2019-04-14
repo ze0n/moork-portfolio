@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
     <script src="js/jquery.justifiedGallery.min.js"></script>
 
     <!-- Core CSS file -->
@@ -46,7 +47,7 @@
     </script>
 
     <script id="block-template-2" type="x-tmpl-mustache">
-        <div class="block-image block-image-2">
+        <div class="block-image block-image-2" onclick="window.PR.selectProject('{{projectId}}')">
             <span class="title">{{title}}</span>
             <p>{{shortDescription}}</p>
             <img alt="{{description}}" src="{{tmbUrl}}" class="zoomable-image" data-index="{{ind}}"/>
@@ -61,6 +62,17 @@
             </div>
         </div>
     </script>
+
+    <script id="subgalery-template-2" type="x-tmpl-mustache">
+        <div id="project-{{id}}" class="project-info">
+            <button class="btn btn-light" onclick="window.PR.returnToProjects()">&#10229; Back</button>
+            <h3><a id="anchor-{{id}}"></a>{{title}}</h3>
+            <div class="projectDescriprion">{{{description}}}</div>
+            <div id="{{id}}">
+            </div>
+        </div>
+    </script>
+
 
     <script id="about-template-1" type="x-tmpl-mustache">
                             
@@ -126,8 +138,14 @@
                     </div>
                 </div>
                 <div class="col-md-12 content-col">
-                    <div id="mygallery">
+                    <div id="projectDock" class="">
+                        
                     </div>
+                    <div id="mygalleryContainer">
+                        <div id="mygallery" class="justified-gallery">
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -222,8 +240,6 @@
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
 
-<script src="js/vendor/jquery-1.12.0.min.js"></script>
-<script src="js/jquery.justifiedGallery.min.js"></script>
 
 <script src="js/plugins.js"></script>
 

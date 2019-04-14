@@ -32,6 +32,14 @@ $(function () {
         if (window.location.hash) {
             var possibleFilterClass = window.location.hash.replace('#', '');
             $(".welcome").hide();
+
+            if(window.PR.portfolio.structure.Projects[possibleFilterClass] !== undefined){
+                var page = window.PR.portfolio.structure.Projects[possibleFilterClass];
+                if(page.bodyClass !== undefined){
+                    $("body").addClass(page.bodyClass);
+                }
+            }
+
             window.PR.renderPageByTag(possibleFilterClass);
         } else {
             $(".welcome").show();

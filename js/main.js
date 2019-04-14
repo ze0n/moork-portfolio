@@ -73,7 +73,48 @@ class PortfolioRenderer {
 
         this.blockTemplate = $('#block-template-1').html();
         this.blockTemplate2 = $('#block-template-2').html();
+        this.projectTemplate1 = $('#project-template-1').html();
+
         Mustache.parse(this.blockTemplate);
+    }
+
+    returnToProjects(){
+        $("#projectDock").addClass("hidden");
+        $("#projectDock").empty();
+
+        setTimeout(function(){ $('#mygalleryContainer').removeClass("hidden1") }, 200);
+
+        // $('#justify-gallery').justifiedGallery().on('jg.complete', function (e) {
+        //     $('.loading-animation').fadeOut();
+        //     $(this).fadeIn();
+        // });
+    }
+
+    selectProject(id) {
+        var dock = $("#projectDock");
+        $("#projectDock").empty();
+
+
+        var categories = this.portfolio.structure.Projects;
+        var projects = categories['stage'].projects;
+
+
+        var subgaleryTemplate2 = $('#subgalery-template-2').html();
+        Mustache.parse(subgaleryTemplate2);
+
+        var projectKey = id;
+
+        var project = projects[projectKey];
+        var rendered = Mustache.render(subgaleryTemplate2, project);
+        dock.append(rendered);
+
+        this.renderGalery($("#"+project.id), [projectKey], project.height);
+        
+        $("#projectDock").removeClass("hidden");
+        $('#mygalleryContainer').addClass("hidden1");
+
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
     renderPageByTag(tag) {
@@ -102,10 +143,6 @@ class PortfolioRenderer {
         if(tags[0] in categories){
             var projects = categories[tags[0]].projects;
 
-            var subgaleryTemplate = $('#subgalery-template-1').html();
-            Mustache.parse(subgaleryTemplate);
-
-
             var page = categories[tags[0]];
 
             if(page.renderOutline === undefined || page.renderOutline === true){
@@ -127,6 +164,9 @@ class PortfolioRenderer {
 
             if(page.style === undefined || page.style === "structure")
             {
+                var subgaleryTemplate = $('#subgalery-template-1').html();
+                Mustache.parse(subgaleryTemplate);
+
                 for(var projectKey in projects) {
                     var project = projects[projectKey];
                     var rendered = Mustache.render(subgaleryTemplate, project);
@@ -136,14 +176,29 @@ class PortfolioRenderer {
             }
             else if(page.style === "tiles")
             {
+                var projectDock = $("#projectDock");
+
                 // TODO: finish this
                 this.renderProjectGalery(dock, ["face"], 300, tags[0]);
+
+                $("#mygallery > .jg-entry > img").prop("onclick", null).off("click");
+
+                // for(var projectKey in projects) {
+                //     var project = projects[projectKey];
+                //     var rendered = Mustache.render(subgaleryTemplate2, project);
+                //     projectDock.append(rendered);
+                //     this.renderGalery($("#"+project.id), [projectKey], project.height);
+                // };
             }
 
         }
         else {
             this.renderGalery(dock, tags, 300);
         }
+    }
+
+    renderStageProjectPage(dock, projectName){
+        Structure.Projects["stage"].projects[projectName].title
     }
 
 
@@ -168,6 +223,7 @@ class PortfolioRenderer {
                     description: image.description,
                     tags: image.tags,
                     col: image.col,
+                    projectId: image.tags[1],
                     ind: index,
                     title: Structure.Projects[page].projects[image.tags[1]].title,
                     shortDescription: Structure.Projects[page].projects[image.tags[1]].shortDescription,
@@ -186,7 +242,8 @@ class PortfolioRenderer {
             rowHeight: chosenHeight,
             lastRow: 'nojustify',
             maxRowHeight: 350,
-            margins: 10
+            margins: 10,
+            waitThumbnailsLoad: false
         };
 
         dock.justifiedGallery(justifiedGaleryOptions);
@@ -274,7 +331,8 @@ class PortfolioRenderer {
             rowHeight: chosenHeight,
             lastRow: 'nojustify',
             maxRowHeight: 350,
-            margins: 10
+            margins: 10,
+            waitThumbnailsLoad: false
         };
 
         dock.justifiedGallery(justifiedGaleryOptions);
@@ -320,5 +378,3 @@ window.PR = PR;
 var SelectTag = function (tag) {
     PR.renderPageByTag(tag);
 };
-
-

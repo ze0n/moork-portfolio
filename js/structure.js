@@ -14,13 +14,13 @@ var Structure = {
             "renderOutline": false,
             "projects": {
 				 "afisha": {
-                    "height": 500,
+                    "height": 400,
                     "title": "Theater posters",
                     "id": "subgalery-afisha"
                 },
 				
                 "naturemort": {
-                    "height": 200,
+                    "height": 400,
                     "title": 'Nature Mort',
                     "id": "subgalery-naturemort",
                     "description":
@@ -33,7 +33,7 @@ var Structure = {
                 },
 				
 				 "elsa": {
-                    "height": 200,
+                    "height": 400,
                     "title": "The land of Elsa",
                     "id": "subgalery-elsa",
                     "description": 
@@ -46,7 +46,7 @@ var Structure = {
                 },
 
                 "cinderella": {
-                    "height": 200,
+                    "height": 400,
                     "title": "Cinderella",
                     "id": "subgalery-cinderella",
                     "description": 
@@ -59,7 +59,7 @@ var Structure = {
                 },
 				
 				  "swift": {
-                    "height": 200,
+                    "height": 300,
                     "title": "The house that Swift built",
                     "id": "subgalery-swift",
                     "description": 
@@ -84,7 +84,7 @@ var Structure = {
                 },
 				
 				  "gazzetta": {
-                    "height": 200,
+                    "height": 400,
                     "title": "La Gazzetta",
                     "id": "subgalery-gazzetta",
                     "description": 
@@ -97,7 +97,7 @@ var Structure = {
                 },
 				
 				   "emigrants": {
-                    "height": 200,
+                    "height": 400,
                     "title": "Emigrants",
                     "id": "subgalery-emigrants",
                     "description":
@@ -110,7 +110,7 @@ var Structure = {
                 },
 
                 "diary": {
-                    "height": 200,
+                    "height": 400,
                     "title": "Diary of a Madman",
                     "id": "subgalery-diary",
                     "description": 
@@ -123,7 +123,7 @@ var Structure = {
                 },
 				
 				"apart": {
-                    "height": 200,
+                    "height": 400,
                     "title": "Zoya's Apartment",
                     "id": "subgalery-apart",
                     "description": 
@@ -134,7 +134,7 @@ var Structure = {
                 },
 				
 				"dragon": {
-                    "height": 200,
+                    "height": 400,
                     "title": "The Dragon",
                     "id": "subgalery-dragon",
                     "description": 
@@ -145,7 +145,7 @@ var Structure = {
                 },
 
                 "forest": {
-                    "height": 200,
+                    "height": 400,
                     "title": "The Forest",
                     "id": "subgalery-forest",
 					"description": 
@@ -230,8 +230,6 @@ var Structure = {
 		{"file": "elsa-scen2-1268-900.jpg", "description": "", "tags": ["stage", "elsa"], "col": "col2", "w": 1268, "h": 900 },
 		{"file": "elsa-scen3-1342_900.jpg", "description": "", "tags": ["stage", "elsa"], "col": "col2", "w": 1342, "h": 900 },
 		{"file": "elsa-scen4-1411_900.jpg", "description": "", "tags": ["stage", "elsa", "face"], "col": "col2", "w": 1411, "h": 900 },
-
-
 
         {
             "file": "cg_naturmort3_908_900.jpg",
@@ -568,7 +566,7 @@ var Structure = {
 		 {
             "file": "cinderella-ph2-1351_900.jpg",
             "description": "",
-            "tags": ["stage", "cinderella"],
+            "tags": ["stage", "cinderella", "face"],
             "col": "col2",
             "w": 1351,
             "h": 900
@@ -746,7 +744,7 @@ var Structure = {
 		{
 			"file": "stage_diplom3_1196_900.jpg",
 			"description": "",
-			"tags": ["stage", "swift"],
+			"tags": ["stage", "swift", "face"],
 			"col": "col2",
             "w": 1196,
             "h": 900
@@ -786,7 +784,7 @@ var Structure = {
 		{
 			"file": "stage_les_1243_900.jpg",
 			"description": "",
-			"tags": ["stage", "forest"],
+			"tags": ["stage", "forest", "face"],
 			"col": "col2",
             "w": 1243,
             "h": 900
@@ -818,7 +816,7 @@ var Structure = {
 		{
 			"file": "stage_zoika_1323_900.jpg",
 			"description": "",
-			"tags": ["stage", "apart"],
+			"tags": ["stage", "apart", "face"],
 			"col": "col2",
             "w": 1323,
             "h": 900
