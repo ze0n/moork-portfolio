@@ -714,6 +714,14 @@ var Structure = {
             "h": 900
         },
         {
+            "file": "stage_diplom4_1211_900.jpg",
+            "description": "",
+            "tags": ["stage", "swift"],
+            "col": "col2",
+            "w": 1211,
+            "h": 900
+        },
+        {
             "file": "kostum-diplom2-2545-900.jpg",
             "description": "",
             "tags": ["stage", "swift"],
@@ -721,14 +729,6 @@ var Structure = {
             "w": 2545,
             "h": 900
         },
-		{
-			"file": "stage_diplom4_1211_900.jpg",
-			"description": "",
-			"tags": ["stage", "swift"],
-			"col": "col2",
-            "w": 1211,
-            "h": 900
-		},
 		{
 			"file": "stage_diplom1_1199_900.jpg",
 			"description": "",
