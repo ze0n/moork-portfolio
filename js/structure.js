@@ -531,14 +531,6 @@ var Structure = {
 
 
 
-        {
-            "file": "afisha-zoly-636-900.jpg",
-            "description": "",
-            "tags": ["stage", "cinderella"],
-            "col": "col2",
-            "w": 636,
-            "h": 900
-        },
 		 {
             "file": "kostum-zoly2-2545-900.jpg",
             "description": "Costumes #1, aquarelle",
@@ -595,7 +587,15 @@ var Structure = {
             "w": 1348,
             "h": 900
         },
-		
+		        {
+            "file": "afisha-zoly-636-900.jpg",
+            "description": "",
+            "tags": ["stage", "cinderella"],
+            "col": "col2",
+            "w": 636,
+            "h": 900
+        },
+
 		
         
         {
