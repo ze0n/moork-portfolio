@@ -81,8 +81,7 @@ class PortfolioRenderer {
     returnToProjects(){
         $("#projectDock").addClass("hidden");
         $("#projectDock").empty();
-
-        setTimeout(function(){ $('#mygalleryContainer').removeClass("hidden1") }, 200);
+        $('#mygalleryContainer').removeClass("hidden1");
 
         // $('#justify-gallery').justifiedGallery().on('jg.complete', function (e) {
         //     $('.loading-animation').fadeOut();
@@ -122,6 +121,13 @@ class PortfolioRenderer {
     }
 
     renderPageByTags(tags) {
+        if(tags[0]=="about"){
+
+            if($("#mygalleryContainer").hasClass("hidden1")){
+                this.returnToProjects();
+            }
+        }
+
         var dock = $("#mygallery");
 
         // clean old results
@@ -131,6 +137,7 @@ class PortfolioRenderer {
 
 
         if(tags[0]=="about"){
+
             var aboutTemplate = $('#about-template-1').html();
             Mustache.parse(aboutTemplate);
             var rendered = Mustache.render(aboutTemplate, {});
